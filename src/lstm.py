@@ -7,13 +7,13 @@ from theano_lstm import LSTM, StackedCells, Layer, create_optimization_updates
 
 class Model(object):
 
-    def __init__(self, layerSize):
+    def __init__(self, layerSizes):
 
-        self.layerSize = layerSize
+        self.layerSizes = layerSizes
 
-        self.inputSize, self.outputSize = 256  # mist v reprezentaci rozdilove matice
+        self.inputSize, self.outputSize = 256, 256  # mist v reprezentaci rozdilove matice
 
-        self.theModel = StackedCells(self.inputSize, celltype=LSTM, layers=layerSize)
+        self.theModel = StackedCells(self.inputSize, celltype=LSTM, layers=layerSizes)
 
         ## tady je to asi blbe chtelo by to mozna dat ten argument hidden na tu layer size n
         self.theModel.layers.append(Layer(self.outputSize, 2, activation=T.nnet.sigmoid))
@@ -140,7 +140,7 @@ class Model(object):
 
         self.predicted = result[-1]
 
-        self.forwardFunction = theano.function(
+        self.genFunction = theano.function(
             inputs=[self.num_steps, self.startSeed],
             outputs=self.predicted,
             allow_input_downcast=True
