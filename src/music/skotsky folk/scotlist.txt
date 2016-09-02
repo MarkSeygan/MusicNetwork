@@ -1,0 +1,162 @@
+Tune List - Traditional Scottish Tunes
+======================================
+
+24medley.mid		2/4 March Medley: Highland Laddie /
+			The Barren Rocks of Aden / Teribus
+34medley.mid		3/4 Retreat March Medley: Green Hills of Tyrol /
+			When the Battle's O'er / Lochanside
+44medley.mid		4/4 March Medley: Scotland the Brave / Wha' Saw the 42nd /
+			Murdo's Wedding
+4marys.mid		White Cockade / Flowers of Edinburgh
+68medley.mid		6/8 March Medley: Bonnie Dundee / Steamboat /
+			Cock o' the North
+79thfare.mid		79th's Farewell to Gibraltar /
+			The Smith's a Gallant Fireman /
+			Mrs. MacLeod of Raasay
+afton.mid		Flow Gently Sweet Afton
+alandale.mid		Sweet Rose of Allandale
+alaurie.mid		Annie Laurie
+amgrace.mid		Amazing Grace
+amgracew.mid		Amazing Grace (Wav Table Version)
+annie.mid		Annie Is My Darling / The Bedding Of The Bride / 
+			Merry May The Pair Be
+arrochar.mid		The Maids Of Arrochar
+auldlang.mid		Auld Lang Syne
+auldlng2.mid		Auld Land Syne (The original tune)
+baloo.mid		Baloo, My Boy (Lady Ann Bothwell's Lament)
+barley.mid		The Wind That Shakes The Barley / 
+			Miss Johnston's Reel / The Piper's Lass
+beauty.mid		The Beauty Of The North / 
+			The Style Of The Last Century / Clanranald
+blakbear.mid 	The Black Bear
+blakmary.mid		Black Mary
+bluebell.mid		Blue Bonnets Over the Border (Solo Piper)
+bluebonw.mid		Blue Bonnets Over the Border (Wav Table Version)
+bonidoon.mid 	Bonnie Doon
+bonnets.mid 		Blue Bonnets Over the Border (Instrumental)
+bonntrim.mid		A Bonnet Trimmed With Blue
+bridejig.mid		The Bride's Jig
+caber.mid		Caber Feidh
+caberw.mid		Caber Feidh (Wav Table Version)
+callherr.mid		Caller Herring
+cameron		March Of The Cameron Men
+campbell.mid		The Campbell's Are Coming
+canyesew.mid		Can Ye Sew Cushions?
+captain.mid		Captain White
+circassn.mid		The Circassian Circle
+clement.mid		The Day Thou Gavest
+cocknrth.mid		The Cock o'the North
+coilsfld.mid		Coilsfield House
+comeby.mid		Come By The Hills
+cornrigs.mid 	Corn Rigs Are Bonnie
+corriech.mid		Corriechoillie's Welcome To The Northern Meeting /
+			Teribus
+creeks.mid		Farewell to the Creeks
+crimond.mid		The Lord's My Shepherd
+crossinv.mid		The Cross Of Inverness / Beaufort Castle / 
+			The Earl Of Lauderdale
+cumber.mid 		Cumberland Reel / Syd Chalmers / Belfast Almanack
+daintyd.mid		Dainty Davie
+dawson.mid		Nancy Dawson / Mrs. Rigg
+devil.mid 		Devil Among the Tailors / Mason's Apron
+drunken.mid		The Drunken Piper / Greenwoodside
+dumbartn.mid		Dumbarton's Drums
+dundee.mid 		Bonnie Dundee
+dunvegan.mid		Morag Of Dunvegan
+eriskay.mid		Eriskay Love Lilt
+fairfa.mid		Fair Fa' The Minstrel
+fairylul.mid		Highland Fairy Lullaby
+fallhero.mid		The Fallen Hero
+fearbhat.mid		Fear A' Bhata (The Boatmen)
+fireman.mid		The Smith's a Gallant Fireman /
+			Jock Wilson's Ball / The Kilt is My Delight
+fling.mid		Marquis of Huntly's Highland Fling
+flora.mid		Flora Macdonald's Lament
+flowers.mid 		Flowers of the Forest
+flowers2.mid		The Flowers Of The Forest (Solo Piper)
+flowrs2w.mid		The Flowers Of The Forest (Wav Table Version)
+flwrscot.mid		The Flower of Scotland
+gallowa.mid		Gallowa' Hills
+glaslass.mid		Glasgow Lasses / Lady Jardine / Miss Grant / 
+			Duchess of Manchester
+glendaru.mid		The Glendaruel Highlanders
+glenlog.mid		Glenlogie
+gone2sea.mid		My Love Has Gone To Sea
+gowbroth.mid		Niel Gow's Lament For The Death Of His Brother Donald
+gowlamnt.mid		Niel Gow's Lament For The Death Of His Second Wife
+greenhil.mid		The Green Hills Of Tyrol (Solo Piper) 
+greenhlw.mid		The Green Hills Of Tyrol (Wav Table Version)
+hailto.mid		Hail to the Chief!
+harvest.mid 		Harvest Home
+hazldean.mid		Jock o'Hazeldean
+hector.mid		Hector The Hero
+henmarch.mid		The Hen's March
+hladdie.mid		Highland Laddie
+husband.mid		A Woman To Her Husband Killed At Culloden
+inverset.mid 	The Inverness Gathering / Balmoral Castle / 
+			High Road to Linton
+isleskye.mid		Isle of Skye
+jacobite.mid		Ye Jacobites By Name (Solo Piper and Drummer)
+jacobitw.mid		Ye Jacobites By Name (Wav Table Version)
+jacobit2.mid		Ye Jacobites By Name (Song Version)
+jessie.mid		Jessie, The Flower of Dunblane
+johncope.mid		Johnnie Cope
+katrine.mid		Atholl Highlanders' Farewell to Loch Katrine
+kelgrove.mid		Kelvin Grove
+killie2.mid		Killiecrankie
+kille2w.mid		Killiecrankie (Wav Table Version)
+lassbeg.mid 		My Love She's But A Lassie Yet / Cullem Beg / 
+			Mairi's Wedding
+lassyet.mid		My Love She's But A Lassie Yet
+leezie.mid		Leezie Lindsay
+liteairy.mid		Light and Airy
+lochansi.mid		Lochanside (Combined Bands)
+lochansw.mid		Lochanside (Combined Bands - Wave Table Version)
+lochnagr.mid		Lochnagar
+lomond.txt		The Banks o' Loch Lomond
+lordmac.mid		Lord Macdonald
+lordsfth.mid		Lord Seaforth / O'er The Moor Among The Heather
+macphers.mid		Macpherson's Farewell
+macpher2.mid		Macpherson's Farewell (Military March Version)
+mairi.mid		Mairi's Wedding
+mansaman.mid		A Man's A Man For A'That
+marchmnt.mid		Marchmont House
+margyle.mid		Mary of Argyle
+maribhan.mid		Mairi Bhan Og (Fair Young Mary)
+maryhay.mid		Lady Mary Hay's Scotch Measure
+minch.mid		Scrossing The Minch (Hornpipe)
+mingulay.mid		Mingulay Boat Song (Solo Piper)
+mingulyw.mid		Mingulay Boat Song (Wav Table Version)
+mistcovd.mid 	The Mist Covered Mountains
+moray.mid		Lamentation For James Moray, Esq. Of Abercarney
+moshuil.mid		Mo Shuil Ad' Dheidh
+nancyw.mid		Nancy Whiskey
+petronel.mid		Petronella / Persian Dance / Niel Gow's Farewell to Whiskey
+piperdun.mid		The Piper of Dundee
+rattlin.mid		Rattlin' Roarin' Willie
+redrose.mid		My Love Is Like A Red, Red Rose
+rickets.mid		Rickett's Hornpipe / The Mucking of Geordie's Byre / 			Piobaireachd of Donald Dhu
+roadisle.mid		The Road To The Isles
+rowan.mid		Rowan Tree / The Auld Hoose / Bonnie Lass of Fyvie / 			We're No Awa Tae Bide Awa
+ruinsa.mid		Callin' Mo Ruinsa
+rye.mid			Comin' Thro' The Rye
+sbrave.mid 		Scotland the Brave
+sbrave3.mid		Scotland The Brave (Massed Bands)
+scotshae.mid		Scots Wha' Hae
+scotsmar.mid		The Scots March
+shetfid.mid		Shetland Fiddler
+skyeboat.mid 	Skye Boat Song
+soldier.mid 		The Scottish Soldier
+sweetlas.mid		Sweet Is The Lass That Dwells Among The Heather
+tarwath.mid		Farewell To Tarwathie
+teviot.mid 		Teviot Bridge / Kinlock of Kinlock
+thugmigl.mid		Thug Mi Gaol
+thugmigw.mid		Thug Mi Gaol (Wav Table Version)
+thurston.mid		Sally Hunter of Thurston / Stool of Repentance / 
+			Miss Sharpe's Delight
+tramps.mid		Tramps and Hawkers
+troop.mid		The Highland Troop
+turnye.mid		Turn Ye To Me
+waters.mid		The Meeting Of The Waters
+willyeno.mid		Will Ye No Come Back Again?
+

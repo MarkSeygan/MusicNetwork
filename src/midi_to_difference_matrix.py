@@ -2,8 +2,8 @@ import midi
 import numpy as np
 import random
 
-midiMiddleNote = 128
-span = 256  # mame 128 midi not na kazdou stranu
+midiMiddleNote = 100
+span = 200  # mame 64 midi not na kazdou stranu
 
 def midiToDifferenceMatrix(midifile):
 
@@ -19,9 +19,9 @@ def midiToDifferenceMatrix(midifile):
 
     # stav pro kazdou zmenu (pocitame od nejvyssi noty)
     # prvni index: zahraj true/false, druhy index: ligature true/false
-    # treti index: velocity od 0 do 127
-    state = [[0, 0, 0] for x in range(span)]
-
+    # treti index: velocity od 0 do 127 - zatim neni
+    #state = [[0, 0, 0] for x in range(span)]
+    state = [[0, 0] for x in range(span)]
     diffMatrix.append(state)
 
     highestPitch = 64
@@ -32,7 +32,8 @@ def midiToDifferenceMatrix(midifile):
 
             # nova doba = novy stav
             oldstate = state
-            state = [[0, 0, 0] for x in range(span)]
+            #state = [[0, 0, 0] for x in range(span)]
+            state = [[0, 0] for x in range(span)]
 
             j = 0
             toCount = False
@@ -41,7 +42,8 @@ def midiToDifferenceMatrix(midifile):
                     j += 1
                 if oldstate[i][0] == 1:
                     try:
-                        state[midiMiddleNote - j] = [oldstate[i][0], 1, oldstate[i][2]]
+                        #state[midiMiddleNote - j] = [oldstate[i][0], 1, oldstate[i][2]]
+                        state[midiMiddleNote - j] = [oldstate[i][0], 1]
                         if toCount is False:
                             currentHighestPitch = highestPitch + i - midiMiddleNote
                             highestPitch = currentHighestPitch
@@ -68,12 +70,12 @@ def midiToDifferenceMatrix(midifile):
                 if isinstance(event, midi.NoteEvent):
                     if isinstance(event, midi.NoteOffEvent) or event.velocity == 0:
                         if event.pitch not in newEvents:
-                            state[-(highestPitch - event.pitch) + midiMiddleNote] = [0, 0, event.velocity]
+                            state[-(highestPitch - event.pitch) + midiMiddleNote] = [0, 0] #, event.velocity]
                     else:
-                        state[-(highestPitch - event.pitch) + midiMiddleNote] = [1, 0, event.velocity]
+                        state[-(highestPitch - event.pitch) + midiMiddleNote] = [1, 0] #, event.velocity]
                         newEvents.append(event.pitch)
 
-                # zatim 4/4 casova signatura - 2 je odmocnina ze 4
+                # zatim 4/4 casova signatura - 2 odmocnina ze 4
                 elif isinstance(event, midi.TimeSignatureEvent):
                     if event.numerator not in (2, 4):
                         return diffMatrix
@@ -101,10 +103,12 @@ def differenceMatrixToMidi(diffMatrix, name="output"):
     track = midi.Track()
     pattern.append(track)
 
+    stop = False
     ticksPerBeat = 96  # vybral jsem jako asi nejcastejsi ve skladbach, zatim se zda byt pomale
 
     lastCmdTime = 0
-    prevState = [[0, 0, 0] for x in range(span)]
+    #prevState = [[0, 0, 0] for x in range(span)]
+    prevState = [[0, 0] for x in range(span)]
 
     currentRelativeNote = random.randint(55, 65)
 
@@ -119,44 +123,55 @@ def differenceMatrixToMidi(diffMatrix, name="output"):
 
         previousRelativeNote = relativeNote
         relativeNote = currentRelativeNote
-        for i in xrange(span - 1, 0, -1):
+        try:
+            for i in xrange(span - 1, 0, -1):
 
-            currentNote = state[i]
+                currentNote = state[i]
 
-            # bude to prvni na kterou narazim odshora
-            if currentNote[0] == 1 and foundRelative is False:
-                currentRelativeNote = (i - midiMiddleNote) + relativeNote
-                foundRelative = True
+                # bude to prvni na kterou narazim odshora
+                if currentNote[0] == 1 and foundRelative is False:
+                    currentRelativeNote = (i - midiMiddleNote) + relativeNote
+                    foundRelative = True
 
-            relativeIndex = relativeNote - previousRelativeNote + i
+                relativeIndex = relativeNote - previousRelativeNote + i
 
-            if 0 <= relativeIndex <= 255:
-                currNotePitch = relativeNote - (midiMiddleNote - i)
-                if currNotePitch <= 127:
-                    if prevState[relativeIndex][0] == 1:
-                        if currentNote[0] == 0:  # byla ukoncena
-                            offEvents.append(currNotePitch)
-                        elif currentNote[1] == 0:  # tedy oddelit noty
-                            offEvents.append(currNotePitch)
-                            onEvents.append([currNotePitch, currentNote[2]])
-                    elif currentNote[0] == 1:  # nova nota
-                        onEvents.append([currNotePitch, currentNote[2]])
+                if 0 <= relativeIndex <= 255:
+                    currNotePitch = relativeNote - (midiMiddleNote - i)
+                    if currNotePitch <= 127:
 
-        if foundRelative is False:
-            currentRelativeNote = relativeNote  # byla pomlka berme z prechozi doby
+                        if prevState[relativeIndex][0] == 1:
+                            if currentNote[0] == 0:  # byla ukoncena
+                                offEvents.append(currNotePitch)
+                            elif currentNote[1] == 0:  # tedy oddelit noty
+                                offEvents.append(currNotePitch)
+                                #onEvents.append([currNotePitch, currentNote[2]])
+                                onEvents.append(currNotePitch)
+                        elif currentNote[0] == 1:  # nova nota
+                            #onEvents.append([currNotePitch, currentNote[2]])
+                            onEvents.append(currNotePitch)
 
-        for note in offEvents:
-            track.append(midi.NoteOffEvent(tick=(time - lastCmdTime) * ticksPerBeat, pitch=note))
-            lastCmdTime = time
-        for note in onEvents:
-            track.append(midi.NoteOnEvent(tick=(time - lastCmdTime) * ticksPerBeat, velocity=note[1], pitch=note[0]))
-            lastCmdTime = time
+            if foundRelative is False:
+                currentRelativeNote = relativeNote  # byla pomlka berme z prechozi doby
 
-        prevState = state
+            for note in offEvents:
+                track.append(midi.NoteOffEvent(tick=(time - lastCmdTime) * ticksPerBeat, pitch=note))
+                lastCmdTime = time
+            for note in onEvents:
+                #track.append(midi.NoteOnEvent(tick=(time - lastCmdTime) * ticksPerBeat, velocity=note[1], pitch=note[0]))
+                track.append(midi.NoteOnEvent(tick=(time - lastCmdTime) * ticksPerBeat, velocity=50, pitch=note))
+                lastCmdTime = time
 
-    eot = midi.EndOfTrackEvent(tick=1)
-    track.append(eot)
-    print track
-    midi.write_midifile("{}.mid".format(name), pattern)
+            prevState = state
+        except IndexError:
+            print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne'
+            stop = True
 
+    if not stop:
+        eot = midi.EndOfTrackEvent(tick=1)
+        track.append(eot)
+        print track
+        try:
+            midi.write_midifile("{}.mid".format(name), pattern)
+        except ValueError:
+            print "nakokot hudba vypadla"
 # 0 v druhem indexu neni legato - tzn. artikuluj notu
