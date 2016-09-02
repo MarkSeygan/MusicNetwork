@@ -15,11 +15,10 @@ def generate(model, music, songLength, name="piece"):
     pass
 
 if __name__ == '__main__':
-    music = train.loadMusic("music")
 
     model = lstm.Model([700, 600]) # add dropout here
     # model.config = pickle.load(open("output/final_learned_config.p", "rb" ))
-    train.train(model, music, 500)
+    train.train(model, train.loadMusic("music"), 8000)
     pickle.dump(model.config, open("output/final_config.p", "wb"))
     '''''200
     for name in os.listdir('music'):

@@ -2,835 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ee49b16-bdd2-4a1f-a9bc-5319e406ed81" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/240388.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/81862.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/Ahrix-nova.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/Aufbruch3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/BR_IM6.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/Beethoven-violin-sonata1-1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/DEB_CLAI.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/DEB_PASS.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/Mahler1-3ext.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_esp1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_esp2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_esp3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_esp4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_esp5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_esp6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/alb_se8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/appass_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/appass_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/appass_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bach_846.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bach_847.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bach_850.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_les_adieux_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_les_adieux_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_les_adieux_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus10_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus10_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus10_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus22_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus22_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus22_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus22_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus90_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/beethoven_opus90_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bizet-jeux-d-enfants-poupee.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bor_ps1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bor_ps2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bor_ps3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bor_ps4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bor_ps5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bor_ps6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/bor_ps7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/br_im2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/br_im5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/br_rhap.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/brahms_opus117_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/brahms_opus117_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/brahms_opus1_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/brahms_opus1_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/brahms_opus1_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/brahms_opus1_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_agitato.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_erwachen.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_geschwindigkeit.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_gewitter.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_perlen.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_quelle.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_spinnerlied.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_sylphen.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/burg_trennung.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/carol-of-the-bells.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chopin-etude-op10-no4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chp_op18.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chp_op31.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p11.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p13.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p14.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p15.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p16.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p17.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p18.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p19.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p20.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p21.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p22.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p23.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p24.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn-p9.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op10_e01.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op10_e05.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op10_e12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op23.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op25_e1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op25_e11.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op25_e12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op25_e2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op25_e3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op25_e4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op27_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op27_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op33_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op33_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op35_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op35_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op35_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op35_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op53.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op66.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op7_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/chpn_op7_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/deb_menu.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/deb_prel.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/debussy_cc_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/debussy_cc_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/debussy_cc_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/debussy_cc_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/debussy_cc_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/elise.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/fur-elise.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/gaudete-rejoice.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/gra_esp_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/gra_esp_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/gra_esp_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_album.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_berceuse.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_brooklet.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_butterfly.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_elfentanz.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_halling.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_kobold.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_march.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_once_upon_a_time.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_spring.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_voeglein.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_waechter.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_walzer.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_wanderer.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_wedding.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/grieg_zwerge.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/handels-largo-piano.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/hay_40_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/hay_40_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_33_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_33_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_33_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_35_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_35_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_35_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_43_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_43_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_43_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_7_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_7_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_7_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_8_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_8_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_8_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_8_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_9_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_9_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/haydn_9_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_donjuan.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et_trans4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et_trans5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_et_trans8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_liebestraum.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_rhap02.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_rhap09.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_rhap10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_rhap12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/liz_rhap15.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op19_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op19_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op19_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op19_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op19_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op19_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op30_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op30_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op30_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op30_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op30_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op53_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op62_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op62_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mendel_op62_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/240388.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/81862.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/Ahrix-nova.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/Aufbruch3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/BR_IM6.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/Beethoven-violin-sonata1-1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/DEB_CLAI.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/DEB_PASS.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/Mahler1-3ext.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_esp1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_esp2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_esp3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_esp4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_esp5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_esp6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/alb_se8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/appass_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/appass_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/appass_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bach_846.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bach_847.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bach_850.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_hammerklavier_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_hammerklavier_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_hammerklavier_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_hammerklavier_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_les_adieux_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_les_adieux_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_les_adieux_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus10_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus10_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus10_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus22_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus22_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus22_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus22_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus90_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/beethoven_opus90_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bizet-jeux-d-enfants-poupee.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bor_ps1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bor_ps2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bor_ps3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bor_ps4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bor_ps5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bor_ps6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/bor_ps7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/br_im2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/br_im5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/br_rhap.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/brahms_opus117_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/brahms_opus117_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/brahms_opus1_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/brahms_opus1_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/brahms_opus1_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/brahms_opus1_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_agitato.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_erwachen.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_geschwindigkeit.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_gewitter.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_perlen.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_quelle.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_spinnerlied.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_sylphen.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/burg_trennung.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/carol-of-the-bells.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chopin-etude-op10-no4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chp_op18.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chp_op31.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p11.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p13.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p14.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p15.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p16.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p17.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p18.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p19.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p20.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p21.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p22.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p23.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p24.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn-p9.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op10_e01.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op10_e05.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op10_e12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op23.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op25_e1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op25_e11.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op25_e12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op25_e2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op25_e3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op25_e4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op27_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op27_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op33_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op33_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op35_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op35_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op35_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op35_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op53.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op66.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op7_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/chpn_op7_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/deb_menu.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/deb_prel.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/debussy_cc_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/debussy_cc_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/debussy_cc_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/debussy_cc_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/debussy_cc_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/elise.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/fur-elise.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/gaudete-rejoice.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/gra_esp_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/gra_esp_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/gra_esp_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_album.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_berceuse.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_brooklet.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_butterfly.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_elfentanz.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_halling.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_kobold.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_march.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_once_upon_a_time.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_spring.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_voeglein.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_waechter.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_walzer.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_wanderer.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_wedding.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/grieg_zwerge.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/handels-largo-piano.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/hay_40_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/hay_40_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_33_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_33_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_33_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_35_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_35_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_35_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_43_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_43_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_43_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_7_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_7_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_7_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_8_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_8_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_8_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_8_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_9_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_9_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/haydn_9_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_donjuan.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et_trans4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et_trans5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_et_trans8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_liebestraum.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_rhap02.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_rhap09.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_rhap10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_rhap12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/liz_rhap15.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op19_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op19_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op19_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op19_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op19_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op19_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op30_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op30_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op30_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op30_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op30_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op53_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op62_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op62_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mendel_op62_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mond_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mond_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mond_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mujTestik.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/muss_8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_311_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_311_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_311_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_330_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_330_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_330_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_331_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_331_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_331_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_332_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_332_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_332_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_333_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_333_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_333_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_545_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_545_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_545_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_570_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_570_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/mz_570_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/output.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/pathetique_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/pathetique_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/pathetique_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/sans-day-carol-piano.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schu_143_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schu_143_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schu_143_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d760_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d760_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d760_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d760_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d960_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d960_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d960_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schub_d960_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D850_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D850_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D850_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D850_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D935_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D935_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D935_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schubert_D935_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schuim-1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schuim-2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schuim-3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schuim-4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schum_abegg.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schumm-1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schumm-2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schumm-3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schumm-4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schumm-5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/schumm-6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_11.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_13.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn15_9.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn16_8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn68_10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/scn68_12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/silent_night_easy.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/test.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_april.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_august.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_dezember.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_februar.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_januar.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_juli.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_juni.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_maerz.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_mai.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_november.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_oktober.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/ty_september.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/waldstein_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/waldstein_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/midi files backup/waldstein_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mond_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mond_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mond_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mujTestik.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/muss_8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_311_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_311_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_311_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_330_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_330_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_330_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_331_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_331_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_331_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_332_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_332_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_332_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_333_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_333_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_333_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_545_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_545_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_545_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_570_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_570_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/mz_570_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/output.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/pathetique_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/pathetique_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/pathetique_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/sans-day-carol-piano.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schu_143_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schu_143_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schu_143_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d760_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d760_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d760_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d760_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d960_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d960_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d960_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schub_d960_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D850_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D850_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D850_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D850_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D935_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D935_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D935_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schubert_D935_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schuim-1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schuim-2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schuim-3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schuim-4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schum_abegg.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schumm-1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schumm-2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schumm-3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schumm-4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schumm-5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/schumm-6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_11.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_13.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn15_9.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_4.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_5.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_6.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_7.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn16_8.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn68_10.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/scn68_12.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/silent_night_easy.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/24MEDLEY.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/34MEDLEY.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/44MEDLEY.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/4marys.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/68MEDLEY.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/79thfare.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Afton.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Alandale.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Alaurie.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Amgrace.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Annie.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Arrochar.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Auldlang.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Auldlng2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/BACKGR.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/BRIDEJIG.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Baloo.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Barley.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Beauty.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Blakbear.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Blakmary.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Bluebell.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Bluebonn.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Bonidoon.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Bonnets.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Bonntrim.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CABER.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CAMPBELL.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CLEMENT.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Callherr.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Cameron.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Canyesew.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Captain.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Circassn.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Cockade.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Cocknrth.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Coilsfld.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Comeby.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Cornrigs.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Corriech.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Creeks.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Crimond.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Crossinv.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Cumber.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/DAINTYD.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Dawson.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Devil.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Drunken.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Dumbartn.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Dundee.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Dunvegan.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/ERISKAY.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/FLING.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Fairfa.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Fairylul.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Fallhero.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Fearbhat.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Fineflwr.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Fireman.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Flora.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Flowers.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Flwrscot.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Gallow2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Glaslass.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Glendaru.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Glenlog.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Gone2sea.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Gowbroth.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Gowlamnt.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Hailto.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Harvest.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Hazldean.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Hector.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Henmarch.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Hladdie.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Horo.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Husband.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Iknow.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Inverset.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Isleskye.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/JESSIE.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Jacobit2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Johncope.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Katrine.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Kelgrove.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/LTBLUE.JPG" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Lassbeg.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Lassyet.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Leezie.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Liteairy.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Lochnagr.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Lomond.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Lordmac.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Lordsfth.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/MOSHUIL.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Macpher2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Macphers.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Maidbell.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Mairi.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Mansaman.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Marchmnt.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Margyle.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Maribhan.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Maryhay.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Minch.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Mistcovd.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Moray.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Nancyw.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Petronel.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Piperdun.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/RATTLIN.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Redrose.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Ricketts.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Roadisle.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Rowan.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Ruinsa.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Rye.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Sbrave.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Sbrave2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Scotshae.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Scotsmar.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Shetfid.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Skyeboat.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Soldier.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Steerher.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Sweetlas.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/THUGMIGL.MID" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Tarwath.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Teviot.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Thurston.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Tramps.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Troop.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Turnye.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Waters.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Willyeno.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/test.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_april.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_august.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_dezember.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_februar.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_januar.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_juli.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_juni.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_maerz.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_mai.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_november.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_oktober.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/ty_september.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/waldstein_1.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/waldstein_2.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/waldstein_3.mid" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/MusicNetwork.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/mark_seygan.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/4MARYS.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/AFTON.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/ALANDALE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/ALAURIE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/AMGRACE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/AULDLANG.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/AULDLNG2.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/BALOO.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/BLUEBELL.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/BONIDOON.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CAMERON.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CAMPBELL.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CANYESEW.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CLEMENT.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/COMEBY.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CORNRIGS.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/CRIMOND.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/DAINTYD.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/DUMBARTN.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/DUNDEE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/ERISKAY.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/FINEFLWR.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/FLORA.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/FLWRSCOT.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/GALLOWA.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/HAZLDEAN.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/HORO.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/IKNOW.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/JACOBIT2.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/JACOBITE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/JESSIE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/JOHNCOPE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/KELGROVE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/LASSYET.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/LOCHNAGR.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/LOMOND.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/MACPHERS.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/MAIRI.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/MANSAMAN.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/MARGYLE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/MISTCOVD.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/MOSHUIL.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/NANCYW.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/PIPERDUN.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/RATTLIN.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/REDROSE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/ROADISLE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/ROWAN.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/RUINSA.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/RYE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Readme.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/SBRAVE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/SCOTSHAE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/SKYEBOAT.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/SOLDIER.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/Scotmenu.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/TARWATH.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/TRAMPS.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/TURNYE.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/WILLYENO.HTM" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/fairylul.htm" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/music/skotsky folk/scotlist.txt" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/staremididiff.py" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/240388.mid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/81862.mid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/Ahrix-nova.mid" afterPath="" />
@@ -850,10 +21,7 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/silent_night_easy.mid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/test.mid" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/src/ty_oktober.mid" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lstm.py" afterPath="$PROJECT_DIR$/src/lstm.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main.py" afterPath="$PROJECT_DIR$/src/main.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/midi_to_difference_matrix.py" afterPath="$PROJECT_DIR$/src/midi_to_difference_matrix.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/train.py" afterPath="$PROJECT_DIR$/src/train.py" />
     </list>
     <ignored path="MusicNetwork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -876,8 +44,8 @@
       <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="342">
-              <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+            <state relative-caret-position="378">
+              <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
               <folding>
                 <element signature="e#28#40#0" expanded="true" />
               </folding>
@@ -888,7 +56,7 @@
       <file leaf-file-name="lstm.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/lstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="3456">
               <caret line="192" column="36" selection-start-line="192" selection-start-column="36" selection-end-line="192" selection-end-column="36" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
@@ -920,7 +88,7 @@
       <file leaf-file-name="train.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/train.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="486">
+            <state relative-caret-position="-92">
               <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
               <folding>
                 <element signature="e#0#17#0" expanded="true" />
@@ -932,7 +100,7 @@
       <file leaf-file-name="midi_to_difference_matrix.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/midi_to_difference_matrix.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3096">
+            <state relative-caret-position="3132">
               <caret line="174" column="26" selection-start-line="174" selection-start-column="26" selection-end-line="174" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -944,7 +112,7 @@
       <file leaf-file-name="staremididiff.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/staremididiff.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
+            <state relative-caret-position="486">
               <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
@@ -1242,18 +410,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46992865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32892805" sideWeight="0.30769232" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26299694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46992865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26299694" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1713,29 +881,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/staremididiff.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/midi_to_difference_matrix.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3096">
-          <caret line="174" column="26" selection-start-line="174" selection-start-column="26" selection-end-line="174" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/train.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="486">
+        <state relative-caret-position="-92">
           <caret line="27" column="14" selection-start-line="27" selection-start-column="14" selection-end-line="27" selection-end-column="14" />
           <folding>
             <element signature="e#0#17#0" expanded="true" />
@@ -1743,9 +891,29 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/midi_to_difference_matrix.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3132">
+          <caret line="174" column="26" selection-start-line="174" selection-start-column="26" selection-end-line="174" selection-end-column="26" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/staremididiff.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="486">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/lstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
+        <state relative-caret-position="3456">
           <caret line="192" column="36" selection-start-line="192" selection-start-column="36" selection-end-line="192" selection-end-column="36" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
@@ -1755,8 +923,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="53" selection-start-line="19" selection-start-column="53" selection-end-line="19" selection-end-column="53" />
+        <state relative-caret-position="378">
+          <caret line="21" column="66" selection-start-line="21" selection-start-column="66" selection-end-line="21" selection-end-column="66" />
           <folding>
             <element signature="e#28#40#0" expanded="true" />
           </folding>
