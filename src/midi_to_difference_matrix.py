@@ -113,17 +113,17 @@ def differenceMatrixToMidi(diffMatrix, name="output"):
     currentRelativeNote = random.randint(55, 65)
 
     relativeNote = 64
+    try:
+        for time, state in enumerate(matrix):
+            onEvents = []
+            offEvents = []
 
-    for time, state in enumerate(matrix):
-        onEvents = []
-        offEvents = []
+            # prvni relativni nota je nahodna, pouziva se vzdy relativni nota o jeden beat zpet
+            foundRelative = False
 
-        # prvni relativni nota je nahodna, pouziva se vzdy relativni nota o jeden beat zpet
-        foundRelative = False
+            previousRelativeNote = relativeNote
+            relativeNote = currentRelativeNote
 
-        previousRelativeNote = relativeNote
-        relativeNote = currentRelativeNote
-        try:
             for i in xrange(span - 1, 0, -1):
 
                 currentNote = state[i]
@@ -162,16 +162,16 @@ def differenceMatrixToMidi(diffMatrix, name="output"):
                 lastCmdTime = time
 
             prevState = state
-        except IndexError:
-            print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne'
-            stop = True
+    except IndexError:
+       print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne'
+       stop = True
 
-    if not stop:
+    if stop is not True:
         eot = midi.EndOfTrackEvent(tick=1)
         track.append(eot)
         print track
         try:
             midi.write_midifile("{}.mid".format(name), pattern)
         except ValueError:
-            print "nakokot hudba vypadla"
+            print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne'
 # 0 v druhem indexu neni legato - tzn. artikuluj notu

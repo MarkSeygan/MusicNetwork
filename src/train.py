@@ -1,22 +1,27 @@
 import os, random
 from midi_to_difference_matrix import *
+from midi_to_matrix import *
 import cPickle as pickle
 from lstm import addBeat
 import numpy
 import itertools
 
-# zatim test po jednom
-batchWidth = 1
-# batchlen bych nedaval ptz chci hlavne zachytit strukturu pisne
-songLength = 20*8
+# songlength used for training, gen songlength is argument of a program
+songLength = 50*8
+# number of parts before updating the weights 
+#@@@ this tag is used to show which lines to uncomment for batch training instead of online training
+batchSize = 10
 
+def createBatch(music):
+    ipt, opt = zip(*[getMusicPart(music) for _ in range(batchSize)])
+    return numpy.array(ipt), numpy.array(opt)
 
 def loadMusic(path):
     music = {}
 
     for name in os.listdir(path):
         if name[-4:] in ('.mid', '.MID'):
-            matrix = midiToDifferenceMatrix(os.path.join(path, name))
+            matrix = midiToMatrix(os.path.join(path, name))
             if len(matrix) < songLength:
                 continue
 
@@ -37,15 +42,13 @@ def addDelimiters(sequence, delimiter, partLen):
 
 
 def getMusicPart(music):
-    # pozor: drive byla matice se tremi hodnotami... i velocity
     part = random.choice(music.values())
     part = part[0:songLength]
     preInput = []
 
     for timestep in part:
         merged = list(itertools.chain.from_iterable(timestep))
-        #zkouska bez delimiteru
-        #delimitedMerged = addDelimiters(merged, 20, 2)
+        
         preInput.append(merged)
 
     input = [addBeat(state, time) for time, state in enumerate(preInput)]
@@ -54,27 +57,24 @@ def getMusicPart(music):
 
 def train(model, music, epochs, start=0):
     for i in range(start, start + epochs):
-        # zatim to je po jednom, zadnej batch
         inpt, outpt = getMusicPart(music)
         firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
+
+        #@@@ if batch training is wanted, use this line instead of the following
+        #@@@ error = model.trainingFunction(createBatch(music))
         error = model.trainingFunction(numpy.array(inpt), numpy.array(outpt))
-        if i % 50 == 0:
-            print "epocha {}, error {}".format(i, error)
-        if error < 600:
+
+        # gen sample
+        if i % 100 == 0 or error < 500:
             firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
-            # zjisti jakej index shape je delka pisne v debuggeru
             testoi = model.genFunction(songLength, 0, firstIpt[0])
-            differenceMatrixToMidi(numpy.concatenate((
+            matrixToMidi(numpy.concatenate((
                 numpy.expand_dims(optForFirstNote[0], 0),
                 model.genFunction(songLength, 0, firstIpt[0])), axis=0),
                 'output/after{}epochs'.format(i))
-            pickle.dump(model.config, open('params/params{}'.format(i), 'wb'))
-        if i % 30 == 0:
-            firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
-            testoi = model.genFunction(songLength, 0, firstIpt[0])
-            differenceMatrixToMidi(numpy.concatenate((
-                numpy.expand_dims(optForFirstNote[0], 0),
-                model.genFunction(songLength, 0, firstIpt[0])), axis=0),
-                'output/after{}epochs'.format(i))
-            pickle.dump(model.config, open('params/params{}'.format(i), 'wb'))
-        print "epocha {}, error={}".format(i, error)
+
+        # save regulary
+        if i % 1500 == 0:
+            pickle.dump(model.config, open('po36500/params{}'.format(i), 'wb'))
+
+        print "epocha {}, error {}".format(i, error)

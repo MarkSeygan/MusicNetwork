@@ -1,32 +1,53 @@
 __author__ = 'Marek Zidek'
 
+import sys
 import train
 import lstm
 import cPickle as pickle
+import argparse
 
 import os
 
-# from staremididiff import *
 from midi_to_difference_matrix import *
+from midi_to_matrix import *
+
+def generate(songLenth):
+    model = lstm.Model([300, 300, 250])
+    model.config = pickle.load(open("params/params15000", "rb"))
+    music = train.loadMusic("music")
+    # generates 5 parts
+    for i in range(0, 5):
+        firstIpt, optForFirstNote = map(numpy.array, train.getMusicPart(music))
+        matrixToMidi(numpy.concatenate((
+            numpy.expand_dims(optForFirstNote[0], 0),
+            model.genFunction(songLenth*8, 0, firstIpt[0])), axis=0),
+            'output/example{}'.format(i))
 
 
-def generate(model, music, songLength, name="piece"):
-    # zkusit vlastni slow_walk nebo pres gen funkci
-    pass
+def intTryParse(value):
+    try:
+        int(value)
+        return True
+    except ValueError:
+        return False
 
 if __name__ == '__main__':
 
-    model = lstm.Model([700, 600]) # add dropout here
-    # model.config = pickle.load(open("output/final_learned_config.p", "rb" ))
-    train.train(model, train.loadMusic("music"), 8000)
-    pickle.dump(model.config, open("output/final_config.p", "wb"))
-    '''''200
-    for name in os.listdir('music'):
-        if name[-4:] in ('.mid', '.MID'):
-            matrix = midiToDifferenceMatrix(os.path.join('music', name))
-            if len(matrix) < 160:
-                continue
+    if len(sys.argv) != 3:
+        print "Add arguments: t/g (train or generate), songLenth in number of 8 measure bars (for instance 80 is a minute and half)"
+    elif sys.argv[1] != 't' and sys.argv[1] != 'g':
+        print "Misstype in first argument"
+    elif intTryParse(sys.argv[2]) is False or sys.argv[2] < 1:
+        print "Add integer > 1 to second argument"
+    else:
+        if sys.argv[1] == 'g':
+            generate(int(sys.argv[2]))
+        else:
+            model = lstm.Model([300, 300, 250])
+            # to continue training use uncomment and paste your config
+            #model.config = pickle.load(open("po36500/params36500", "rb" ))
+            train.train(model, train.loadMusic("music"), 30000)
+            pickle.dump(model.config, open("params/final_config", "wb"))
 
-            print "loaded " + name
-            differenceMatrixToMidi(matrix, 'dobry data/' + name + 'TEST')
-    '''''
+
+    
