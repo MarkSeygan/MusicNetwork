@@ -75,6 +75,6 @@ def train(model, music, epochs, start=0):
 
         # save regulary
         if i % 1500 == 0:
-            pickle.dump(model.config, open('po36500/params{}'.format(i), 'wb'))
+            pickle.dump(model.config, open('params/params{}'.format(i), 'wb'))
 
         print "epocha {}, error {}".format(i, error)
