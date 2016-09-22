@@ -86,7 +86,7 @@ class Model(object):
 
         if self.dropout > 0:
             masks = theano_lstm.MultiDropout([[size] for size in self.layerSizes], self.dropout)
-            #@@@ masks = theano_lstm.MultiDropout([(batchSize, shape) for shape in self.t_layer_sizes], self.dropout)
+            #@@@ masks = theano_lstm.MultiDropout([(batchSize, shape) for shape in self.layerSizes], self.dropout)
         else:
             masks = []
 
@@ -108,7 +108,7 @@ class Model(object):
         # avoid learning ligature/articulate where the notes are not played
         # keep it in 3 dims means -> pads the resulting played notes into arrays with one element
         activeNotes = T.shape_padright(self.outputMatrix[1:, :, 0])
-        #@@@ activeNotes = T.shape_padright(self.output_mat[:, 1:, :, 0])
+        #@@@ activeNotes = T.shape_padright(self.outputMatrix[:, 1:, :, 0])
         mask = T.concatenate([T.ones_like(activeNotes), activeNotes], axis=2)
         #@@@ mask = T.concatenate([T.ones_like(activeNotes), activeNotes], axis=3)
 
