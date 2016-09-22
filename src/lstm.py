@@ -96,7 +96,7 @@ class Model(object):
 
         result, _ = theano.scan(fn=step, sequences=inputWithoutLastTime, non_sequences=masks, outputs_info=outputsInfo)
 
-        #result is matrix[layer](time, hiddens/output)
+        # result is matrix[layer](time, hiddens->output)
 
         finalBig = getLastLayer(result)
 
@@ -142,7 +142,7 @@ class Model(object):
         # first input vector from music matrix
         self.startSeed = T.bvector()
 
-        # lenght of song
+        # length of song
         self.num_steps = T.iscalar()
 
         self.currTime = T.iscalar()
@@ -197,7 +197,7 @@ class Model(object):
         )
 
 
-# if layer needs some data from reccurent relations, this initializes the starting data
+# if layer needs some data from recurent relations, this initializes the starting data
 def initialState(layer, dim=None):
 
     # else branch is used for batch training if wanted
