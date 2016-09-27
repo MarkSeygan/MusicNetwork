@@ -67,7 +67,7 @@ def train(model, music, epochs, start=0):
         firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
 
         #@@@ if batch training is wanted, use this line instead of the following
-        #@@@ error = model.trainingFunction(createBatch(music))
+        #@@@ error = model.trainingFunction(*createBatch(music))
         error = model.trainingFunction(numpy.array(inpt), numpy.array(outpt))
 
         # gen sample
