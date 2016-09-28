@@ -14,6 +14,7 @@ from midi_to_matrix import *
 def generate(songLenth):
     model = lstm.Model([300, 300, 250])
     model.config = pickle.load(open("params/params15000", "rb"))
+    #@@@ model.config = pickle.load(open("output/batch_training_results_and_params/params9000", "rb"))
     music = train.loadMusic("music")
     # generates 5 parts
     for i in range(0, 5):

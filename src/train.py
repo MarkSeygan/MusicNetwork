@@ -5,6 +5,7 @@ import cPickle as pickle
 from lstm import addBeat
 import numpy
 import itertools
+import sys
 
 # songlength used for training, gen songlength is argument of a program
 songLength = 50*8
@@ -42,6 +43,10 @@ def addDelimiters(sequence, delimiter, partLen):
 
 
 def getMusicPart(music):
+    if music.length == 0
+        print "None of your inputted music is in 4/4 signature"
+        sys.exit()
+
     part = random.choice(music.values())
     part = part[0:songLength]
     preInput = []
@@ -61,7 +66,7 @@ def train(model, music, epochs, start=0):
         firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
 
         #@@@ if batch training is wanted, use this line instead of the following
-        #@@@ error = model.trainingFunction(createBatch(music))
+        #@@@ error = model.trainingFunction(*createBatch(music))
         error = model.trainingFunction(numpy.array(inpt), numpy.array(outpt))
 
         # gen sample
