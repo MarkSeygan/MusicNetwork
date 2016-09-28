@@ -43,7 +43,8 @@ def addDelimiters(sequence, delimiter, partLen):
 
 
 def getMusicPart(music):
-    if music.length == 0
+
+    if music.length == 0:
         print "None of your inputted music is in 4/4 signature"
         sys.exit()
 
