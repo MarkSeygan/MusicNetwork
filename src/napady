@@ -1,0 +1,5 @@
+-Misto nezavislych bernoulliho pokusech pro kazdou notu zkusit softmaxem vygenerovat distribuci a pote generovat nahodne cislo z teto distribuce(snad na to neco v pythonu bude, jinak treba po jednom generovat cisla od 0 do 1 pro kazdou hodnotu a vzdy tweaknout(zvetsit a promyslet jak) pravdepodobnost dalsi hodnoty aby to davalo distribuci. Jinak natrenovat novou sit na to, kolik bude brat prvku z one distribuce, Vstup bude klasickej vsechno, co je vstupem ted pro hlavni sit.
+-zkusit i generative adversial methods (GAN), nebo takove to s tim generatorem a diskriminatorem z deep learning course
+-dynamiku zkusit tak, jak jsem ji popsal v dokumentaci RP
+-rozhodne zkusit zase ty rozdily mezi notami(underfittovalo mi to) a nyni zvolit treba input o 3 doby dozadu a nebo pridat neco jako reward(ale zapornej - tedy pokuta) system na to, kdyz jsou treba noty v 5 dobach uple silene od sebe
+-mam pocit ze ta sit na pocet zahranych not v jednom timestepu je klicova myslenka, ktera ve vsech tech ostatnich pracich chybi
