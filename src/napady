@@ -3,3 +3,8 @@
 -dynamiku zkusit tak, jak jsem ji popsal v dokumentaci RP
 -rozhodne zkusit zase ty rozdily mezi notami(underfittovalo mi to) a nyni zvolit treba input o 3 doby dozadu a nebo pridat neco jako reward(ale zapornej - tedy pokuta) system na to, kdyz jsou treba noty v 5 dobach uple silene od sebe
 -mam pocit ze ta sit na pocet zahranych not v jednom timestepu je klicova myslenka, ktera ve vsech tech ostatnich pracich chybi
+-udelat neco jako residualni konekce jako v konvoluci u resnetu, nasel jsem dokonce clanek kde je to fakt implementovany aj je o tom pojednany https://www.aclweb.org/anthology/D/D16/D16-1093.pdf skip connected LSTM a chtel bych to L = velikost taktu, prihodne :)
+-pridat do inputu reprezentaci casu... pote moznost trenovat i na chunkach ne na zacatku, ale i treba z prostredka... mozna by tim padem treba slo zvetsit batch size na ukor chunku
+-jeste napad jak jsem zkousel ten softmax, tak misto toho udelat zase hodne sigmoidu, ale sit na ligatury udelat novou, "ktera bere jako input dokonce i tu uz zahranou notu" <-- tohle bude blbost.. protoze to uz vlastne delam maskou
+-zkusit pak pri generovani neco jako ensembling at to je mene zavisle na nahode!!!
+-zkusit nejak napodobit ci prizpusobit batchNorm pro tu mou sit

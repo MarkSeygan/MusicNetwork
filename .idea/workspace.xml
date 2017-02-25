@@ -2,7 +2,316 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8ee49b16-bdd2-4a1f-a9bc-5319e406ed81" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/Aufbruch3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/Autumn-piano-arrangement.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/BR_IM6.MID" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/Beethoven-violin-sonata1-1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/DEB_CLAI.MID" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/DEB_PASS.MID" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/Mahler1-3ext.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/alb_se6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/alb_se7.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/alb_se8.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/alla-turca.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/appass_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/appass_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/appass_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bach_846.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bach_847.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bach_850.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_hammerklavier_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_les_adieux_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_les_adieux_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_les_adieux_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus10_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus10_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus10_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus22_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus22_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus22_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus22_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus90_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/beethoven_opus90_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bizet-jeux-d-enfants-poupee.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bor_ps1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bor_ps2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bor_ps3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bor_ps4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bor_ps5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bor_ps6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/bor_ps7.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/br_im2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/br_im5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/br_rhap.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/brahms_opus117_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/brahms_opus117_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/brahms_opus1_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/brahms_opus1_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/brahms_opus1_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/brahms_opus1_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_agitato.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_erwachen.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_geschwindigkeit.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_gewitter.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_perlen.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_quelle.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_spinnerlied.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_sylphen.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/burg_trennung.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/carol-of-the-bells.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chopin-etude-op10-no4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chp_op18.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chp_op31.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p10.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p11.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p12.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p13.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p14.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p15.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p16.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p17.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p18.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p19.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p20.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p21.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p22.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p23.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p24.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p7.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p8.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn-p9.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op10_e01.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op10_e05.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op10_e12.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op23.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op25_e1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op25_e11.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op25_e12.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op25_e2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op25_e3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op25_e4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op27_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op27_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op33_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op33_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op35_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op35_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op35_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op35_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op53.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op66.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op7_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/chpn_op7_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/deb_menu.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/deb_prel.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/debussy_cc_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/debussy_cc_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/debussy_cc_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/debussy_cc_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/debussy_cc_6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/edvard-grieg-peer-gynt1-morning-mood-piano.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/elise.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/fur-elise.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/gaudete-rejoice.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/gra_esp_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/gra_esp_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/gra_esp_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_album.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_berceuse.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_brooklet.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_butterfly.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_elfentanz.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_halling.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_kobold.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_march.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_once_upon_a_time.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_spring.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_voeglein.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_waechter.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_walzer.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_wanderer.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_wedding.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/grieg_zwerge.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/handel-water-music-hornpipe-piano.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/handels-largo-piano.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/hay_40_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/hay_40_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_33_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_33_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_33_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_35_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_35_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_35_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_43_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_43_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_43_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_7_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_7_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_7_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_8_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_8_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_8_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_8_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_9_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_9_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/haydn_9_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_donjuan.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et_trans4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et_trans5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_et_trans8.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_liebestraum.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_rhap02.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_rhap09.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_rhap10.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_rhap12.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/liz_rhap15.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op19_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op19_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op19_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op19_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op19_5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op19_6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op30_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op30_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op30_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op30_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op30_5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op53_5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op62_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op62_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mendel_op62_5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mond_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mond_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mond_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mozart-piano-concerto-21-2-elvira-madigan-piano-solo.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mozart-piano-sonata-k333-movement1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mujTestik.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_7.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/muss_8.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_311_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_311_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_311_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_330_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_330_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_330_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_331_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_331_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_331_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_332_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_332_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_332_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_333_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_333_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_333_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_545_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_545_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_545_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_570_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_570_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/mz_570_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/output.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/pathetique_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/pathetique_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/pathetique_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/purcell-funeral-music-for-queen-mary-keyboard.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/sans-day-carol-piano.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schu_143_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schu_143_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schu_143_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d760_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d760_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d760_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d760_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d960_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d960_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d960_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schub_d960_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D850_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D850_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D850_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D850_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D935_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D935_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D935_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schubert_D935_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schuim-1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schuim-2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schuim-3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schuim-4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schum_abegg.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schumm-1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schumm-2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schumm-3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schumm-4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schumm-5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/schumm-6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_10.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_11.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_12.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_13.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_7.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_8.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn15_9.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_3.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_4.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_5.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_6.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_7.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn16_8.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn68_10.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/scn68_12.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/silent_night_easy.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/sonata-in-c.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/sonata_1_1_(c)iscenko.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/sonata_6_1_(c)iscenko.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/test.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_april.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_august.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_dezember.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_februar.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_januar.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_juli.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_juni.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_maerz.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_mai.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_november.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_oktober.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/ty_september.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/waldstein_1.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/waldstein_2.mid" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/music/waldstein_3.mid" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/lstm.py" afterPath="$PROJECT_DIR$/src/lstm.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/napady" afterPath="$PROJECT_DIR$/src/napady" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/train.py" afterPath="$PROJECT_DIR$/src/train.py" />
     </list>
     <ignored path="MusicNetwork.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -22,26 +331,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-90">
-              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="720">
+              <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="lstm.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="lstm.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/lstm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+            <state relative-caret-position="-3823">
+              <caret line="27" column="138" selection-start-line="27" selection-start-column="138" selection-end-line="27" selection-end-column="138" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
-                <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-                <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
+        <entry file="file:///usr/local/lib/python2.7/dist-packages/theano_lstm/__init__.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="189">
+              <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -70,7 +387,7 @@
         <entry file="file://$PROJECT_DIR$/src/train.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1098">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -137,16 +454,16 @@
         <option value="$PROJECT_DIR$/src/midiToDifferenceMatrix.py" />
         <option value="$PROJECT_DIR$/src/staremididiff.py" />
         <option value="$PROJECT_DIR$/src/midi_to_difference_matrix.py" />
-        <option value="$PROJECT_DIR$/src/train.py" />
-        <option value="$PROJECT_DIR$/src/lstm.py" />
         <option value="$PROJECT_DIR$/src/main.py" />
+        <option value="$PROJECT_DIR$/src/lstm.py" />
+        <option value="$PROJECT_DIR$/src/train.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-1" />
-    <option name="width" value="1368" />
-    <option name="height" value="748" />
+    <option name="width" value="1922" />
+    <option name="height" value="1060" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -191,7 +508,7 @@
     <panes />
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/biaxial-rnn-music-composition" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PythonContentEntriesConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
   </component>
@@ -344,7 +661,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="MusicNetwork" />
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main.py" />
-      <option name="PARAMETERS" value="" />
+      <option name="PARAMETERS" value="t 80" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
@@ -369,26 +686,26 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-1" y="0" width="1368" height="748" extended-state="6" />
-    <editor active="false" />
+    <frame x="-1" y="0" width="1922" height="1060" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.05124451" sideWeight="0.6923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46992865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.32892805" sideWeight="0.30769232" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.37708333" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46992865" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32925585" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.47085202" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -430,11 +747,6 @@
           <line>141</line>
           <option name="timeStamp" value="80" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/src/train.py</url>
-          <line>52</line>
-          <option name="timeStamp" value="82" />
-        </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
@@ -446,7 +758,7 @@
           </properties>
         </breakpoint>
       </default-breakpoints>
-      <option name="time" value="83" />
+      <option name="time" value="88" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PythonConfigurationType">
@@ -480,8 +792,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -507,8 +817,6 @@
           <caret line="9" column="36" selection-start-line="9" selection-start-column="36" selection-end-line="9" selection-end-column="36" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -542,8 +850,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -569,8 +875,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -596,8 +900,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -623,8 +925,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -650,8 +950,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -677,8 +975,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -711,8 +1007,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -738,8 +1032,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
         </state>
       </provider>
@@ -779,13 +1071,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/local/lib/python2.7/dist-packages/theano_lstm/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18">
-          <caret line="410" column="0" selection-start-line="410" selection-start-column="0" selection-end-line="410" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -854,31 +1139,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file:///usr/local/lib/python2.7/dist-packages/theano_lstm/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="157" column="0" selection-start-line="157" selection-start-column="0" selection-end-line="157" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="720">
+          <caret line="49" column="0" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/train.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1098">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <caret line="68" column="41" selection-start-line="68" selection-start-column="41" selection-end-line="68" selection-end-column="41" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/lstm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+        <state relative-caret-position="-3823">
+          <caret line="27" column="138" selection-start-line="27" selection-start-column="138" selection-end-line="27" selection-end-column="138" />
           <folding>
             <element signature="e#15#28#0" expanded="true" />
-            <marker date="1474582745952" expanded="true" signature="1665:1676" ph="..." />
-            <marker date="1474582745952" expanded="true" signature="1675:1676" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>

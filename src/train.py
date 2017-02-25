@@ -44,7 +44,7 @@ def addDelimiters(sequence, delimiter, partLen):
 
 def getMusicPart(music):
 
-    if music.length == 0:
+    if len(music) == 0:
         print "None of your inputted music is in 4/4 signature"
         sys.exit()
 
@@ -57,14 +57,18 @@ def getMusicPart(music):
         
         preInput.append(merged)
 
-    input = [addBeat(state, time) for time, state in enumerate(preInput)]
-    return input, part
+    ipt = [addBeat(state, time) for time, state in enumerate(preInput)]
+
+    # index 0 is for notes played. btw 1 is for ligatures
+
+    notes_extracted = [[note[0] for note in timestep] for timestep in part]
+    nr_notes_played = [sum(notes) for notes in notes_extracted]
+    return ipt, part, nr_notes_played
 
 
 def train(model, music, epochs, start=0):
     for i in range(start, start + epochs):
         inpt, outpt = getMusicPart(music)
-        firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
 
         #@@@ if batch training is wanted, use this line instead of the following
         #@@@ error = model.trainingFunction(*createBatch(music))
@@ -73,7 +77,6 @@ def train(model, music, epochs, start=0):
         # gen sample
         if i % 100 == 0 or error < 500:
             firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
-            testoi = model.genFunction(songLength, 0, firstIpt[0])
             matrixToMidi(numpy.concatenate((
                 numpy.expand_dims(optForFirstNote[0], 0),
                 model.genFunction(songLength, 0, firstIpt[0])), axis=0),

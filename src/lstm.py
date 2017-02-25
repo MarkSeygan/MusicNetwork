@@ -18,13 +18,14 @@ class Model(object):
         self.inputSize = 160  # as outpuSize, but with 4 bits for beat
         self.outputSize = 156 # noteMatrix span times 2 for ligature
 
-        self.notes_distribution_model = StackedCells(self.inputSize, celltype=LSTM, layers=layerSizes)
-        #change self.notes_distribution_model.layers.append(Layer(self.layerSizes[-1], self.outputSize, activation=T.nnet.sigmoid))
-        self.notes_distribution_model.layers.append(Layer(self.layerSizes[-1], self.outputSize, activation=T.nnet.softmax))
+        self.notes_distribution_model = StackedCells(self.inputSize, celltype=LSTM, activation=T.nnet.relu, layers=layerSizes)
+        self.notes_distribution_model.layers.append(Layer(self.layerSizes[-1], self.outputSize, activation=T.nnet.sigmoid))
+        #self.notes_distribution_model.layers.append(Layer(self.layerSizes[-1], self.outputSize, activation=T.nnet.softmax))
 
-        notes_to_play_hidden_sizes = [50, 50]
-        self.nr_notes_to_play_model = StackedCells(self.inputSize, celltype=LSTM, layers=[])
-        self.nr_notes_to_play_model.layers.append(Layer(notes_to_play_hidden_sizes[-1], 1, activation=None)) # try with ReLU here
+        self.nr_output_size = 1
+        self.nr_notes_to_play_hidden_sizes = [50, 50]
+        self.nr_notes_to_play_model = StackedCells(self.inputSize, celltype=LSTM, activation=T.nnet.relu, layers=self.nr_notes_to_play_hidden_sizes)
+        self.nr_notes_to_play_model.layers.append(Layer(self.nr_notes_to_play_hidden_sizes[-1], self.nr_output_size, activation=lambda x:x)) # try with ReLU here
 
 
 
@@ -32,7 +33,7 @@ class Model(object):
 
         # here you can modify percentage of neurons being zeroed agains overfitting
         # two methods at inference
-        self.dropout = 0.5
+        self.dropout = 0
 
         print "setting up train"
         self.setTrainingFunction()
@@ -41,22 +42,40 @@ class Model(object):
         print "done setting up"
 
     @property
-    def params(self):
+    def distribution_model_params(self):
         return self.notes_distribution_model.params
 
-    @params.setter
-    def params(self, params):
+    @distribution_model_params.setter
+    def distribution_model_params(self, params):
         self.notes_distribution_model.params = params
 
     @property
-    def config(self):
+    def nr_model_params(self):
+        return self.nr_notes_to_play_model.params
+
+    @nr_model_params.setter
+    def nr_model_params(self, params):
+        self.nr_notes_to_play_model.params = params
+
+    @property
+    def config_distribution_model(self):
         return [self.notes_distribution_model.params, [l.initial_hidden_state for l in self.notes_distribution_model.layers if hasattr(l, 'initialHiddenState')]]
 
-    @config.setter
-    def config(self, config):
+    @config_distribution_model.setter
+    def config_distribution_model(self, config):
         self.notes_distribution_model.params = config[0]
         for l, val in zip((l for l in self.notes_distribution_model.layers if hasattr(l, 'initialHiddenState')), config[1]):
             l.initial_hidden_state.set_value(val.get_value())
+
+    @property
+    def config_nr_model(self):
+        return [self.nr_notes_to_play_model.params, [l.initial_hidden_state for l in self.nr_notes_to_play_model.layers if hasattr(l, 'initialHiddenState')]]
+
+    @config_nr_model.setter
+    def config_nr_model(self, config):
+        self.nr_notes_to_play_model.params = config[0]
+        for l, val in zip((l for l in self.nr_notes_to_play_model.layers if hasattr(l, 'initialHiddenState')), config[1]):
+            l.nr_notes_to_play_model.set_value(val.get_value())
 
     def setTrainingFunction(self):
 
@@ -75,7 +94,7 @@ class Model(object):
         #@@@ self.inputMatrix = T.btensor3()
         #@@@ self.outputMatrix = T.btensor4()
 
-        def step(inputData, *other):
+        def step_note(inputData, *other):
             other = list(other)
             if self.dropout > 0:
                 hiddens = other[:-len(self.layerSizes)]
@@ -104,7 +123,7 @@ class Model(object):
         outputsInfo = [initialState(layer) for layer in self.notes_distribution_model.layers]
         #@@@ outputsInfo = [initialState(layer, batchSize) for layer in self.notes_distribution_model.layers]
 
-        result, _ = theano.scan(fn=step, sequences=inputWithoutLastTime, non_sequences=masks, outputs_info=outputsInfo)
+        result, _ = theano.scan(fn=step_note, sequences=inputWithoutLastTime, non_sequences=masks, outputs_info=outputsInfo)
 
         # result is matrix[layer](time, hiddens->output)
 
@@ -136,16 +155,14 @@ class Model(object):
         # let's use negative logarithm, which nicely enlarges the cost if the P from network doesn't match the real output,
         # and makes the cost really tiny as P is getting closer to real output
          
-        #change probs = mask * T.log((1-final)*(1-self.outputMatrix[1:]) + final*self.outputMatrix[1:] + self.eps)
-        self.cost = mask * T.nnet.categorial_cross_entropy(final, self.outputMatrix[1:])
+        probs = mask * T.log((1-final)*(1-self.outputMatrix[1:]) + final*self.outputMatrix[1:] + self.eps)
 
         #@@@ probs = mask * T.log((1-final)*(1-self.outputMatrix[:,1:]) + final*self.outputMatrix[:,1:] + self.eps)
 
-        # and sum from the cross-entropy formula
-        # this line not needed since cross entropy already calculates the cost       self.cost = T.neg(T.sum(probs))
+        self.cost = T.neg(T.sum(probs))
 
         # adadelta should adaptively adjust the learning rates so we should't bother
-        updates, _, _, _, _ = create_optimization_updates(self.cost, self.params, method="adadelta")
+        updates, _, _, _, _ = create_optimization_updates(self.cost, self.distribution_model_params, method="adadelta")
 
         #####################################
         ## nr_notes_to_play_model training ##
@@ -153,15 +170,45 @@ class Model(object):
 
         # self.inputMatrix is the same as for the other model in this scope
         self.output_nr_notes = T.bmatrix() # time, amount
-        input = self.inputMatrix[0:-1] # last time will be predicted
+        inputs = self.inputMatrix[0:-1] # last time will be predicted
+
+        def step_nr_notes(inputData, *other):
+            other = list(other)
+            if self.dropout > 0:
+                hiddens = other[:-len(self.nr_notes_to_play_hidden_sizes)]
+                dropout = [None] + other[-len(self.nr_notes_to_play_hidden_sizes):]
+            else:
+                hiddens = other
+                dropout = []
+            newStates = self.nr_notes_to_play_model.forward(inputData, prev_hiddens=hiddens, dropout=dropout)
+            return newStates
+
+
+        if self.dropout > 0:
+            masks_dropout = theano_lstm.MultiDropout([[size] for size in self.nr_notes_to_play_hidden_sizes], self.dropout)
+            #@@@ masks = theano_lstm.MultiDropout([(batchSize, shape) for shape in self.nr_notes_to_play_hidden_sizes], self.dropout)
+        else:
+            masks_dropout = []
+
+        # this is initialization of first states going into RNN
+        initial_states = [initialState(layer) for layer in self.nr_notes_to_play_model.layers]
+
+        final, _ = theano.scan(fn=step_nr_notes, sequences=inputs, non_sequences=masks_dropout, outputs_info=initial_states)
+        # final is [layer](time, outputNR)
+        final = getLastLayer(final)
+
+        lesser_costs = (final - self.output_nr_notes) ** 2
+        updates, _, _, _, _ = create_optimization_updates(T.sum(lesser_costs), self.nr_model_params, method="adadelta")
         
+        self.cost += T.sum(lesser_costs)
 
 
         self.trainingFunction = theano.function(
-            inputs=[self.inputMatrix, self.outputMatrix],
+            inputs=[self.inputMatrix, self.outputMatrix, self.output_nr_notes],
             outputs=self.cost,
             updates=updates,
             allow_input_downcast=True)
+
 
     def setGenFunction(self):
 
@@ -173,7 +220,7 @@ class Model(object):
 
         self.currTime = T.iscalar()
 
-        def step(*states):
+        def step_note(*states):
             # states is [ *hiddens, prevResult, time]
 
             inputData = T.bvector()
@@ -192,13 +239,15 @@ class Model(object):
             probs = getLastLayer(newStates)
 
             finalBig = []
+
             for i in range(0, self.outputSize):
                 if i % 2 == 0:
-                	# !!! guilty code here !!!
-                	magicNumber = 1.1 # that magic number is adjusting probs where < 1 means more errors, less silent moments
+                    # !!! guilty code here !!!
+                    magicNumber = 1.1 # that magic number is adjusting probs where < 1 means more errors, less silent moments
                     finalBig.append(self.rng.uniform() < probs[i] ** magicNumber)
+
                 else:
-                	magicNumber = 1.1 # and here > 1 means more of ligatures
+                    magicNumber = 1.1 # and here > 1 means more of ligatures
                     prev_note_played = finalBig[-1]
                     finalBig.append(prev_note_played * (self.rng.uniform() < probs[i] ** magicNumber))
 
@@ -213,7 +262,7 @@ class Model(object):
         outputsInfo = ([initialState(layer) for layer in self.notes_distribution_model.layers] +
                         [dict(initial=self.startSeed, taps=[-1]), dict(initial=self.currTime, taps=[-1]), None])
 
-        result, updates = theano.scan(fn=step, outputs_info=outputsInfo, n_steps=self.num_steps)
+        result, updates = theano.scan(fn=step_note, outputs_info=outputsInfo, n_steps=self.num_steps)
 
         self.predicted = result[-1]
 
@@ -225,7 +274,7 @@ class Model(object):
         )
 
 
-# if layer needs some data from recurent relations, this initializes the starting data
+# if layer needs some data as state from previous recurrent relations, this initializes the starting data
 def initialState(layer, dim=None):
 
     # else branch is used for batch training if wanted
