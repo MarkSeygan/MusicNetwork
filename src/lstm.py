@@ -17,6 +17,10 @@ class Model(object):
         self.layerSizes = layerSizes
 
         self.inputSize = 160  # as outpuSize, but with 4 bits for beat
+
+        # guilty explanation (but not important to understand the program)
+        # in case u wanna change the outputSize, change it also above pickBestEnseble function, couldn't figure out better way
+
         self.outputSize = 156 # noteMatrix span times 2 for ligature
 
         self.notes_distribution_model = StackedCells(self.inputSize, celltype=LSTM, activation=T.nnet.relu, layers=layerSizes)
@@ -24,8 +28,11 @@ class Model(object):
         #self.notes_distribution_model.layers.append(Layer(self.layerSizes[-1], self.outputSize, activation=T.nnet.softmax))
 
         self.nr_output_size = 1
-        self.nr_notes_to_play_hidden_sizes = [50, 50]
-        self.nr_notes_to_play_model = StackedCells(self.inputSize, celltype=LSTM, activation=T.nnet.relu, layers=self.nr_notes_to_play_hidden_sizes)
+        # zkus to tady zvetsit na 250, 250.. zatim to vypada, ze by chtelo zvysit komplexitu
+        self.nr_notes_to_play_hidden_sizes = [50]
+        self.nr_notes_to_play_model = StackedCells(self.inputSize, celltype=LSTM, layers=self.nr_notes_to_play_hidden_sizes)
+
+        # somehow with relu it doesn't really work
         self.nr_notes_to_play_model.layers.append(Layer(self.nr_notes_to_play_hidden_sizes[-1], self.nr_output_size, activation=T.nnet.relu)) # try with ReLU here
 
 
@@ -160,10 +167,10 @@ class Model(object):
 
         #@@@ probs = mask * T.log((1-final)*(1-self.outputMatrix[:,1:]) + final*self.outputMatrix[:,1:] + self.eps)
 
-        self.cost = T.neg(T.sum(probs))
+        cost_0 = T.neg(T.sum(probs))
 
         # adadelta should adaptively adjust the learning rates so we should't bother
-        updates, _, _, _, _ = create_optimization_updates(self.cost, self.distribution_model_params, method="adadelta")
+        updates_0, _, _, _, _ = create_optimization_updates(cost_0, self.distribution_model_params, method="adadelta")
 
         #####################################
         ## nr_notes_to_play_model training ##
@@ -171,6 +178,7 @@ class Model(object):
 
         # self.inputMatrix is the same as for the other model in this scope
         self.output_nr_notes = T.bmatrix() # time, amount
+
         inputs = self.inputMatrix[0:-1] # last time will be predicted
 
         def step_nr_notes(inputData, *other):
@@ -198,16 +206,26 @@ class Model(object):
         # final is [layer](time, outputNR)
         final = getLastLayer(final)
 
-        lesser_costs = (final - self.output_nr_notes) ** 2
-        updates, _, _, _, _ = create_optimization_updates(T.sum(lesser_costs), self.nr_model_params, method="adadelta")
+        lesser_costs = (final - self.output_nr_notes[1:]) ** 2
+
+        cost_1 = T.sum(lesser_costs)
+
+        updates_1, _, _, _, _ = create_optimization_updates(cost_1, self.nr_model_params, method="adadelta")
         
-        self.cost += T.sum(lesser_costs)
+        self.cost = cost_0 + T.sum(lesser_costs)
 
+        # trains distribution
+        self.trainingFunction_0 = theano.function(
+            inputs=[self.inputMatrix, self.outputMatrix],
+            outputs=cost_0,
+            updates=updates_0,
+            allow_input_downcast=True)
 
-        self.trainingFunction = theano.function(
+        # trains nr of notes
+        self.trainingFunction_1 = theano.function(
             inputs=[self.inputMatrix, self.outputMatrix, self.output_nr_notes],
             outputs=self.cost,
-            updates=updates,
+            updates=updates_1,
             allow_input_downcast=True)
 
 
@@ -279,7 +297,7 @@ class Model(object):
                         finalBig.append(self.rng.uniform() < probs[i] ** magicNumber)
 
                     else:
-                        magicNumber = 1.1 # and here > 1 means more of ligatures, because ligature is 1
+                        magicNumber = 1.1 
                         prev_note_played = finalBig[-1]
                         finalBig.append(prev_note_played * (self.rng.uniform() < probs[i] ** magicNumber))
                 ensemble.append(finalBig)
@@ -291,7 +309,6 @@ class Model(object):
 
             # best noteplay from ensemble
             note_rank = [sum([ensemble[position] for ensemble in ensemble_notes]) for position in range(len(ensemble_notes[0]))] #index 0 or any other, cause any ensemble has same len
-            res_holder = [0] * self.outputSize
 
             '''''
             print note_rank
@@ -315,8 +332,9 @@ class Model(object):
                     selected_note_index = max_indices[0]
                     add_note_and_ligature(res_final, selected_note_index, ensemble_ligatures, ensembling_size, note_rank)
             '''''
-            res_final = PickBestEnsembleOp()(predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size, res_holder)
+            res_final = PickBestEnsembleOp()(predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size)
             chosen = T.stack(res_final)
+            chosen = res_final
 
             nextInput = OutputToInputOperation()(chosen, currTime + 1)
 
@@ -345,11 +363,48 @@ class Model(object):
         )
 
 def add_note_and_ligature(res_final, note_index, ensemble_ligatures, ensembling_size, note_rank=[]):
-    if len(note_rank) > 0:
-        note_rank[note_index] = 0
-    res_final[note_index * 2] = 1
-    ligature_choice = sum([ensemble[note_index] for ensemble in ensemble_ligatures])
-    res_final[note_index * 2 + 1] = int(ligature_choice > ensembling_size)
+	result = res_final[:] #just a test, could be res_final
+	if len(note_rank) > 0:
+		note_rank[note_index] = 0
+	result[note_index * 2] = 1
+	ligature_choice = sum([ensemble[note_index] for ensemble in ensemble_ligatures])
+	print ligature_choice, " ", ensembling_size
+	if ligature_choice > ensembling_size/2:
+		print "stalo se, ze ze zahraje ligatura"
+		result[note_index * 2 + 1] = 1 #more than half experiments voted yes
+	return result
+
+# guilty one here: theano couldn't acces model.outputSize and putting it into Model class caused problems.
+# So a comment is also at self.outputSize in Model class declaration in case of a size change to change it here also
+model_output_size = 156
+def pickBestEnsemble(predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size):
+	print "test1"
+	print ensemble_ligatures
+	res_final_placeholder = [0] * model_output_size
+	print "predicted_nr bylo", predicted_nr_of_notes
+	for i in range(int(round(predicted_nr_of_notes,0))):
+		# tady si davej bacha at proste jedes po maxech, ale potom az se bude i blizit konci tak at to z te jedne hladiny spravedlive random choicem rozdelim
+		max_rank = max(note_rank)
+		max_indices = [k for k, j in enumerate(note_rank) if j == max_rank]
+
+		# there is more equally good candidates than we can possibly choose:
+		if len(max_indices) > predicted_nr_of_notes - i:
+			# choose them randomly
+			final_indices = np.random.permutation(max_indices)[0:int(round(predicted_nr_of_notes,0)) - i]
+			print "tady v picku je ligature choice ", sum([ensemble[final_indices[0]] for ensemble in ensemble_ligatures])
+
+			for i in range(len(final_indices)):
+				res_final_placeholder = add_note_and_ligature(res_final_placeholder, final_indices[i], ensemble_ligatures, ensembling_size)
+			break
+		else:
+			selected_note_index = max_indices[0]
+			print "tady v picku je ligature choice ", sum([ensemble[selected_note_index] for ensemble in ensemble_ligatures])
+			print "test upravy note_ranku"
+			print "tady note_rank pred jeho upravou:", note_rank
+			res_final_placeholder = add_note_and_ligature(res_final_placeholder, selected_note_index, ensemble_ligatures, ensembling_size, note_rank)
+			print "tady note_rank po uprave:", note_rank
+	print "povedlo se"
+	return res_final_placeholder
     
 # if layer needs some data as state from previous recurrent relations, this initializes the starting data
 def initialState(layer, dim=None):
@@ -379,38 +434,24 @@ def listify(result):
     else:
         return [result]
 
+ligature_ensembling_size = 10 #should be same as ensembling size in make_node... after debug, replace argument ensembling size with global variable like this
 class PickBestEnsembleOp(theano.Op):
 
-    def make_node(self, predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size, res_final):
+    def make_node(self, predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size):
         predicted_nr_of_notes = T.as_tensor_variable(predicted_nr_of_notes)
         note_rank = T.as_tensor_variable(note_rank)
-        ensemble_ligatures = np.array(ensemble_ligatures)
-        ensemble_ligatures = theano.shared(ensemble_ligatures)
+        #ensemble_ligatures = np.array(ensemble_ligatures)
+        for i in range(ligature_ensembling_size):
+        	ensemble_ligatures[i] = T.as_tensor_variable(ensemble_ligatures[i])
+        print "takhle vypada v make nodu ensemble ligatures: ", ensemble_ligatures
+        ensemble_ligatures = T.as_tensor_variable(ensemble_ligatures)
         ensembling_size = T.as_tensor_variable(ensembling_size)
-        res_final = T.as_tensor_variable(res_final)
-        return theano.Apply(self, [predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size, res_final], [T.bvector()])
+        return theano.Apply(self, [predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size], [T.bvector()])
 
     def perform(self, node, inputs, outputs_storage, **kwargs):
 
-        predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size, res_final = inputs
-
-        for i in range(predicted_nr_of_notes):
-            # tady si davej bacha at proste jedes po maxech, ale potom az se bude i blizit konci tak at to z te jedne hladiny spravedlive random choicem rozdelim
-            max_rank = max(note_rank)
-            max_indices = [k for k, j in enumerate(note_rank) if j == max_rank]
-
-            # there is more equally good candidates than we can possibly choose:
-            if len(max_indices) > len(predicted_nr_of_notes) - i:
-                # choose them randomly
-                final_indices = np.random.permutation(max_indices)[0:len(predicted_nr_of_notes) - i]
-                for i in range(len(final_indices)):
-                    add_note_and_ligature(res_final, final_indices[i], ensemble_ligatures, ensembling_size)
-                break
-            else:
-                selected_note_index = max_indices[0]
-                add_note_and_ligature(res_final, selected_note_index, ensemble_ligatures, ensembling_size, note_rank)
-
-        outputs_storage[0][0] = res_final
+        predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size= inputs
+        outputs_storage[0][0] = np.array(pickBestEnsemble(predicted_nr_of_notes, note_rank.tolist(), ensemble_ligatures.tolist(), ensembling_size), dtype='int8')
 
 class OutputToInputOperation(theano.Op):
 

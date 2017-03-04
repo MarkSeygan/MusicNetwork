@@ -8,3 +8,5 @@
 -jeste napad jak jsem zkousel ten softmax, tak misto toho udelat zase hodne sigmoidu, ale sit na ligatury udelat novou, "ktera bere jako input dokonce i tu uz zahranou notu" <-- tohle bude blbost.. protoze to uz vlastne delam maskou
 -zkusit pak pri generovani neco jako ensembling at to je mene zavisle na nahode!!!
 -zkusit nejak napodobit ci prizpusobit batchNorm pro tu mou sit
+-pro difference midi matrix zpusob pridat aj reprezentaci vysky a pouzivat ji pri vypoctu costu spolu se sledovanim minulych hodnot atd.
+-doimplementovat vypocty accuracies

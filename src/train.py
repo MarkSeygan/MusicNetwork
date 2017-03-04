@@ -68,22 +68,26 @@ def getMusicPart(music):
 
 def train(model, music, epochs, start=0):
     for i in range(start, start + epochs):
-        inpt, outpt = getMusicPart(music)
+        inpt, outpt, outpt_nr_notes = getMusicPart(music)
 
         #@@@ if batch training is wanted, use this line instead of the following
         #@@@ error = model.trainingFunction(*createBatch(music))
-        error = model.trainingFunction(numpy.array(inpt), numpy.array(outpt))
+        error_0 = model.trainingFunction_0(numpy.array(inpt), numpy.array(outpt))
+        error_1 = model.trainingFunction_1(numpy.array(inpt), numpy.array(outpt), numpy.array(outpt_nr_notes).reshape((len(outpt_nr_notes),1)))
 
+        print "train probehl v pohode"
         # gen sample
-        if i % 100 == 0 or error < 500:
-            firstIpt, optForFirstNote = map(numpy.array, getMusicPart(music))
+        if i % 100 == 0 or error_0 < 500:
+            firstIpt, true_first_note, _ = map(numpy.array, getMusicPart(music))
             matrixToMidi(numpy.concatenate((
-                numpy.expand_dims(optForFirstNote[0], 0),
+                numpy.expand_dims(true_first_note[0], 0),
                 model.genFunction(songLength, 0, firstIpt[0])), axis=0),
                 'output/after{}epochs'.format(i))
 
         # save regulary
         if i % 1500 == 0:
-            pickle.dump(model.config, open('params/params{}'.format(i), 'wb'))
+            pickle.dump(model.config_distribution_model, open('params_distribution/params{}'.format(i), 'wb'))
+            pickle.dump(model.config_nr_model, open('params_nr/params{}'.format(i), 'wb'))
 
-        print "epocha {}, error {}".format(i, error)
+        print "epocha {}, error {}".format(i, error_0)
+        print "epocha {}, nr error {}".format(i, error_1)

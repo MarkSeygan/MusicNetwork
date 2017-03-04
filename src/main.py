@@ -13,12 +13,13 @@ from midi_to_matrix import *
 
 def generate(songLenth):
     model = lstm.Model([300, 300, 250])
-    model.config = pickle.load(open("params/params15000", "rb"))
+    model.config_distribution_model = pickle.load(open("params_distribution/params4500", "rb"))
+    model.config_nr_model = pickle.load(open("params_nr/params4500", "rb"))
     #@@@ model.config = pickle.load(open("output/batch_training_results_and_params/params9000", "rb"))
     music = train.loadMusic("music")
     # generates 5 parts
     for i in range(0, 5):
-        firstIpt, optForFirstNote = map(numpy.array, train.getMusicPart(music))
+        firstIpt, optForFirstNote, nr_notes = map(numpy.array, train.getMusicPart(music))
         matrixToMidi(numpy.concatenate((
             numpy.expand_dims(optForFirstNote[0], 0),
             model.genFunction(songLenth*8, 0, firstIpt[0])), axis=0),
@@ -48,7 +49,7 @@ if __name__ == '__main__':
             # to continue training use uncomment and paste your config
             #model.config = pickle.load(open("po36500/params36500", "rb" ))
             train.train(model, train.loadMusic("music"), 30000)
-            pickle.dump(model.config, open("params/final_config", "wb"))
+            pickle.dump(model.config_distribution_model, open("params/final_config", "wb"))
 
 
     
