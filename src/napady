@@ -10,3 +10,9 @@
 -zkusit nejak napodobit ci prizpusobit batchNorm pro tu mou sit
 -pro difference midi matrix zpusob pridat aj reprezentaci vysky a pouzivat ji pri vypoctu costu spolu se sledovanim minulych hodnot atd.
 -doimplementovat vypocty accuracies
+-zkusit hodne zvysit komplexitu nr_modelu
+-zkusit misto nr_modelu naimplementovat pocet not podle toho ensemblu
+-zkusit pridat neco jako epsilon greedy politiku na prozkoumavani novych melodii, tedy napr. odriznout toho nejlepsiho kandidata z note ranku a ubrat nr o -1
+-zkusit v tom difference matrix modelu i ten vetsi vstup a treba i zaexperimentovat s tou relativitou mezi tema 3 predchozima vstupama
+-zkusit v gen funkci predavat diskriminatoru a na nejakem zakladu z train funkce prohledavat prostor do toho, aby nepoznal. (v gen funkci jde taky updatovat shared_variables)
+

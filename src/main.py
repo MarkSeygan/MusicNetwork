@@ -12,7 +12,7 @@ from midi_to_difference_matrix import *
 from midi_to_matrix import *
 
 def generate(songLenth):
-    model = lstm.Model([300, 300, 250])
+    model = lstm.Model([800, 700])
     model.config_distribution_model = pickle.load(open("params_distribution/params4500", "rb"))
     model.config_nr_model = pickle.load(open("params_nr/params4500", "rb"))
     #@@@ model.config = pickle.load(open("output/batch_training_results_and_params/params9000", "rb"))
@@ -45,7 +45,7 @@ if __name__ == '__main__':
         if sys.argv[1] == 'g':
             generate(int(sys.argv[2]))
         else:
-            model = lstm.Model([300, 300, 250])
+            model = lstm.Model([400, 350])
             # to continue training use uncomment and paste your config
             #model.config = pickle.load(open("po36500/params36500", "rb" ))
             train.train(model, train.loadMusic("music"), 30000)

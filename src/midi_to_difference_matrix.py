@@ -2,8 +2,10 @@ import midi
 import numpy as np
 import random
 
-midiMiddleNote = 100
-span = 200  # mame 64 midi not na kazdou stranu
+midiMiddleNote = 64
+span = 128  # mame 64 midi not na kazdou stranu
+lb = 0
+ub = 128
 
 def midiToDifferenceMatrix(midifile):
 
@@ -24,7 +26,9 @@ def midiToDifferenceMatrix(midifile):
     state = [[0, 0] for x in range(span)]
     diffMatrix.append(state)
 
+
     highestPitch = 64
+    highestPitches = [64]
     while not (all(t is None for t in remainingTime)):
 
         # resolution = pocet ticku pro jeden takt
@@ -38,20 +42,22 @@ def midiToDifferenceMatrix(midifile):
             j = 0
             toCount = False
             for i in xrange(span - 1, 0, -1):
+                # to count zacne kdyz se narazi na prvni nejvyssi notu
                 if toCount:
                     j += 1
                 if oldstate[i][0] == 1:
                     try:
                         #state[midiMiddleNote - j] = [oldstate[i][0], 1, oldstate[i][2]]
-                        state[midiMiddleNote - j] = [oldstate[i][0], 1]
+                        state[midiMiddleNote - j] = [oldstate[i][0], 0]
                         if toCount is False:
                             currentHighestPitch = highestPitch + i - midiMiddleNote
+                            highestPitches.append(currentHighestPitch)
                             highestPitch = currentHighestPitch
 
                         toCount = True
                     except IndexError:
-                        print "vetsi insterval v midi nez 64 not"
-                        break
+                        print "vetsi insterval v midi nez 64 not error 1"
+                        return [],[]
 
             diffMatrix.append(state)
 
@@ -68,17 +74,23 @@ def midiToDifferenceMatrix(midifile):
                 # rozdily pocitame relativne k nejvyssi note
                 event = track[pos]
                 if isinstance(event, midi.NoteEvent):
-                    if isinstance(event, midi.NoteOffEvent) or event.velocity == 0:
-                        if event.pitch not in newEvents:
-                            state[-(highestPitch - event.pitch) + midiMiddleNote] = [0, 0] #, event.velocity]
-                    else:
-                        state[-(highestPitch - event.pitch) + midiMiddleNote] = [1, 0] #, event.velocity]
-                        newEvents.append(event.pitch)
+                    try:
+                        if isinstance(event, midi.NoteOffEvent) or event.velocity == 0:
+                            if event.pitch not in newEvents:
+                                state[-(highestPitch - event.pitch) + midiMiddleNote] = [0, 0] #, event.velocity]
+                        else:
+                            state[-(highestPitch - event.pitch) + midiMiddleNote] = [1, 0] #, event.velocity]
+                            newEvents.append(event.pitch)
+                    except IndexError:
+                        print "vetsi interval v midi nez 64 not error 2"
+                        return [],[]
+
 
                 # zatim 4/4 casova signatura - 2 odmocnina ze 4
                 elif isinstance(event, midi.TimeSignatureEvent):
                     if event.numerator not in (2, 4):
-                        return diffMatrix
+                        print "neni ve ctvrtovem predznamenani"
+                        return [], []
 
                 try:
                     remainingTime[i] = track[pos + 1].tick
@@ -94,7 +106,7 @@ def midiToDifferenceMatrix(midifile):
 
         currTime += 1
 
-    return diffMatrix
+    return diffMatrix, highestPitches
 
 
 def differenceMatrixToMidi(diffMatrix, name="output"):
@@ -142,7 +154,7 @@ def differenceMatrixToMidi(diffMatrix, name="output"):
                         if prevState[relativeIndex][0] == 1:
                             if currentNote[0] == 0:  # byla ukoncena
                                 offEvents.append(currNotePitch)
-                            elif currentNote[1] == 0:  # tedy oddelit noty
+                            elif currentNote[1] == 1:  # tedy oddelit noty
                                 offEvents.append(currNotePitch)
                                 #onEvents.append([currNotePitch, currentNote[2]])
                                 onEvents.append(currNotePitch)
@@ -163,7 +175,7 @@ def differenceMatrixToMidi(diffMatrix, name="output"):
 
             prevState = state
     except IndexError:
-       print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne'
+       print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne, error 0'
        stop = True
 
     if stop is not True:
@@ -173,5 +185,5 @@ def differenceMatrixToMidi(diffMatrix, name="output"):
         try:
             midi.write_midifile("{}.mid".format(name), pattern)
         except ValueError:
-            print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne'
+            print 'Vygenerovany song mel vetsi interval not nez 64 not, coz by stejne znelo divne, error 1'
 # 0 v druhem indexu neni legato - tzn. artikuluj notu
