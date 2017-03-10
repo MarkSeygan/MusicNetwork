@@ -16,7 +16,6 @@ class Model(object):
 
     def __init__(self, layerSizes):
 
-        sys.setrecursionlimit(100000)
         self.layerSizes = layerSizes
 
         #self.inputSize = 160  # as outpuSize, but with 4 bits for beat
@@ -24,7 +23,7 @@ class Model(object):
 
         # guilty explanation (but not important to understand the program)
         # in case u wanna change the outputSize, change it also above pickBestEnseble function, couldn't figure out better way
-        self.inputSize = 780
+        self.inputSize = 260
         #self.outputSize = 156 # noteMatrix span times 2 for ligature
         self.outputSize = 256
 
@@ -34,7 +33,7 @@ class Model(object):
 
         self.nr_output_size = 1
         # zkus to tady zvetsit na 250, 250.. zatim to vypada, ze by chtelo zvysit komplexitu
-        self.nr_notes_to_play_hidden_sizes = [200]
+        self.nr_notes_to_play_hidden_sizes = [50]
         self.nr_notes_to_play_model = StackedCells(self.inputSize, celltype=LSTM, layers=self.nr_notes_to_play_hidden_sizes)
 
         # somehow with relu it doesn't really work
@@ -147,6 +146,8 @@ class Model(object):
         #######################################
         self.highest_pitches = T.bvector()
         #first highest_pitch is explicitly 64
+
+        #self.highest_pitches = self.highest_pitches[3:]
         self.highest_pitches = self.highest_pitches[1:]
 
         final_notes = finalBig[:,::2]
@@ -207,7 +208,8 @@ class Model(object):
 
         # avoid learning ligature/articulate where the notes are not played
         # keep it in 3 dims means -> pads the resulting played notes into arrays with one element
-        activeNotes = T.shape_padright(self.outputMatrix[3:, :, 0])
+        #activeNotes = T.shape_padright(self.outputMatrix[3:, :, 0])
+        activeNotes = T.shape_padright(self.outputMatrix[1:, :, 0])
         #@@@ activeNotes = T.shape_padright(self.outputMatrix[:, 1:, :, 0])
 
         # !!! ted kdyz tomu vic rozumim, pocekovat, jestli je ta maska spravne !!!
@@ -226,10 +228,9 @@ class Model(object):
         # let's use negative logarithm, which nicely enlarges the cost if the P from network doesn't match the real output,
         # and makes the cost really tiny as P is getting closer to real output
          
-        probs = mask * T.log((1-final)*(1-self.outputMatrix[3:]) + final*self.outputMatrix[3:] + self.eps)
+        #probs = mask * T.log((1-final)*(1-self.outputMatrix[3:]) + final*self.outputMatrix[3:] + self.eps)
+        probs = mask * T.log((1-final)*(1-self.outputMatrix[1:]) + final*self.outputMatrix[1:] + self.eps)
         
-
-        print probs
 
         #@@@ probs = mask * T.log((1-final)*(1-self.outputMatrix[:,1:]) + final*self.outputMatrix[:,1:] + self.eps)
         cost_0 = T.neg(T.sum(probs))
@@ -274,7 +275,8 @@ class Model(object):
         # final is [layer](time, outputNR)
         final = getLastLayer(final)
 
-        lesser_costs = (final - self.output_nr_notes[3:]) ** 2
+        #lesser_costs = (final - self.output_nr_notes[3:]) ** 2
+        lesser_costs = (final - self.output_nr_notes[1:]) ** 2
 
         cost_1 = T.sum(lesser_costs)
 
@@ -286,7 +288,7 @@ class Model(object):
         self.trainingFunction_0 = theano.function(
             inputs=[self.inputMatrix, self.outputMatrix, self.highest_pitches],
             on_unused_input='warn',
-            outputs=cost_0,
+            outputs=[cost_0, ml, marginloss],
             updates=updates_0,
             allow_input_downcast=True)
 
@@ -454,10 +456,16 @@ def add_note_and_ligature(res_final, note_index, ligature_rank, note_rank=[]):
 
 def pickBestEnsemble(predicted_nr_of_notes, note_rank, ligature_rank):
     res_final_placeholder = [0] * model_output_size
+
+    #correct for mistakes
+    if int(round(predicted_nr_of_notes,0)) == 0 and max(note_rank) > 5:
+        predicted_nr_of_notes += 1
+
     for i in range(int(round(predicted_nr_of_notes,0))):
         # tady si davej bacha at proste jedes po maxech, ale potom az se bude i blizit konci tak at to z te jedne hladiny spravedlive random choicem rozdelim
         max_rank = max(note_rank)
         max_indices = [k for k, j in enumerate(note_rank) if j == max_rank]
+
 
         
         if max_rank <= 0:
@@ -476,6 +484,14 @@ def pickBestEnsemble(predicted_nr_of_notes, note_rank, ligature_rank):
         else:
             selected_note_index = max_indices[0]
             res_final_placeholder = add_note_and_ligature(res_final_placeholder, selected_note_index, ligature_rank, note_rank)
+
+        #in case it wants to play, but cannot
+        if max(note_rank) > 5 and i == int(round(predicted_nr_of_notes,0))-1:
+            max_indices = [k for k, j in enumerate(note_rank) if j == max(note_rank)]
+            selected_note_index = max_indices[0]
+            res_final_placeholder = add_note_and_ligature(res_final_placeholder, selected_note_index, ligature_rank, note_rank)
+            
+
     return res_final_placeholder
     
 # if layer needs some data as state from previous recurrent relations, this initializes the starting data
@@ -556,8 +572,8 @@ class OutputToInputOperation(theano.Op):
     def perform(self, node, inputs, outputs_storage, **kwargs):
         state, time, prev_input = inputs
         #outputs_storage[0][0] = addBeat(train.addDelimiters(state, 20, 2), time)
-        outputs_storage[0][0] = addBeat_prevInput(state.tolist(), time, prev_input.tolist())
-        #outputs_storage[0][0] = addBeat(state.tolist(), time)
+        #outputs_storage[0][0] = addBeat_prevInput(state.tolist(), time, prev_input.tolist())
+        outputs_storage[0][0] = addBeat(state.tolist(), time)
 
 timestep_with_beat_size = 260
 def addBeat_prevInput(state, time, prev_input):

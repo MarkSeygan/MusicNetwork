@@ -65,16 +65,19 @@ def getMusicPart(music):
 
     ipt = [addBeat(state, time) for time, state in enumerate(preInput)]
 
+    '''
     input_with_three_timesteps = []
     for i in range(len(part)-2):
         # i is for time here
         input_with_three_timesteps.append(ipt[i] + ipt[i+1] + ipt[i+2])
+    '''
 
     # index 0 is for notes played. btw 1 is for ligatures
 
     notes_extracted = [[note[0] for note in timestep] for timestep in part]
     nr_notes_played = [sum(notes) for notes in notes_extracted]
-    return input_with_three_timesteps, part, nr_notes_played, highest_pitches
+    #return input_with_three_timesteps, part, nr_notes_played, highest_pitches
+    return ipt, part, nr_notes_played, highest_pitches
 
 
 def train(model, music, epochs, start=0):
@@ -84,18 +87,22 @@ def train(model, music, epochs, start=0):
 
         #@@@ if batch training is wanted, use this line instead of the following
         #@@@ error = model.trainingFunction(*createBatch(music))
-        error_0 = model.trainingFunction_0(numpy.array(inpt), numpy.array(outpt), numpy.array(highest_pitches))
+        error = model.trainingFunction_0(numpy.array(inpt), numpy.array(outpt), numpy.array(highest_pitches))
+        error_0 = error[0]
+        margin_loss = error[1]
+        asi_nejakej_vektor_margin[2]
         #error_0 = model.trainingFunction_0(numpy.array(inpt), numpy.array(outpt))
         error_1 = model.trainingFunction_1(numpy.array(inpt), numpy.array(outpt), numpy.array(outpt_nr_notes).reshape((len(outpt_nr_notes),1)))
 
         print "train probehl v pohode"
         # gen sample
-        if i % 150 == 0 or error_0 < 500:
-            firstIpt, true_first_note, _, highest_pitches = map(numpy.array, getMusicPart(music))
-            differenceMatrixToMidi(numpy.concatenate((
-                numpy.expand_dims(true_first_note[0], 0),
-                model.genFunction(songLength, 0, firstIpt[0])), axis=0),
-                'output/after{}epochs'.format(i))
+        if i % 100 == 0 or error_0 < 500:
+            for j in range(10):
+                firstIpt, true_first_note, _, highest_pitches = map(numpy.array, getMusicPart(music))
+                differenceMatrixToMidi(numpy.concatenate((
+                    numpy.expand_dims(true_first_note[0], 0),
+                    model.genFunction(songLength, 0, firstIpt[0])), axis=0),
+                    'output/after{}epochs, example {}'.format(i, j))
 
         # save regulary
         if i % 1500 == 0:
@@ -103,4 +110,6 @@ def train(model, music, epochs, start=0):
             pickle.dump(model.config_nr_model, open('params_nr/params{}'.format(i), 'wb'))
 
         print "epocha {}, error {}".format(i, error_0)
+        print "margin_loss {}".format(margin_loss)
+        print "margin_loss {}".format(asi_nejakej_vektor_margin)
         print "epocha {}, nr error {}".format(i, error_1)

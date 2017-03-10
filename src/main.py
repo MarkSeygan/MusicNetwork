@@ -45,7 +45,7 @@ if __name__ == '__main__':
         if sys.argv[1] == 'g':
             generate(int(sys.argv[2]))
         else:
-            model = lstm.Model([400, 350])
+            model = lstm.Model([200, 150])
             # to continue training use uncomment and paste your config
             #model.config = pickle.load(open("po36500/params36500", "rb" ))
             train.train(model, train.loadMusic("music"), 30000)
