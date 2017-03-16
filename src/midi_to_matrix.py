@@ -50,7 +50,8 @@ def midiToMatrix(midifile):
                 # check for 4/4 signature -> if not end
                 elif isinstance(event, midi.TimeSignatureEvent):
                     if event.numerator not in (2, 4):
-                        return noteMatrix
+                        print "nebylo 4/4 ale nahral jsem"
+                        #return noteMatrix
 
                 try:
                     remainingTime[i] = track[pos + 1].tick

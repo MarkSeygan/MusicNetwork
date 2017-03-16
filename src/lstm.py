@@ -23,16 +23,15 @@ class Model(object):
 
         self.outputSize = 156 # noteMatrix span times 2 for ligature
 
-        self.notes_distribution_model = StackedCells(self.inputSize, celltype=LSTM, activation=T.nnet.relu, layers=layerSizes)
+        self.notes_distribution_model = StackedCells(self.inputSize, celltype=LSTM, layers=layerSizes)
         self.notes_distribution_model.layers.append(Layer(self.layerSizes[-1], self.outputSize, activation=T.nnet.sigmoid))
         #self.notes_distribution_model.layers.append(Layer(self.layerSizes[-1], self.outputSize, activation=T.nnet.softmax))
 
         self.nr_output_size = 1
         # zkus to tady zvetsit na 250, 250.. zatim to vypada, ze by chtelo zvysit komplexitu
-        self.nr_notes_to_play_hidden_sizes = [50]
+        self.nr_notes_to_play_hidden_sizes = [200]
         self.nr_notes_to_play_model = StackedCells(self.inputSize, celltype=LSTM, layers=self.nr_notes_to_play_hidden_sizes)
 
-        # somehow with relu it doesn't really work
         self.nr_notes_to_play_model.layers.append(Layer(self.nr_notes_to_play_hidden_sizes[-1], self.nr_output_size, activation=T.nnet.relu)) # try with ReLU here
 
 
@@ -105,13 +104,25 @@ class Model(object):
         def step_note(inputData, *other):
             other = list(other)
             if self.dropout > 0:
-                hiddens = other[:-len(self.layerSizes)]
+                hiddens = other[:len(self.notes_distribution_model.layers) - 1]
+                skip_connections = other[len(self.notes_distribution_model.layers) - 1:2*(len(self.notes_distribution_model.layers) - 1)]
                 dropout = [None] + other[-len(self.layerSizes):]
             else:
-                hiddens = other
+                hiddens = other[:len(self.notes_distribution_model.layers) - 1]
+                skip_connections = other[len(self.notes_distribution_model.layers) - 1:2*(len(self.notes_distribution_model.layers) - 1)]
                 dropout = []
             newStates = self.notes_distribution_model.forward(inputData, prev_hiddens=hiddens, dropout=dropout)
-            return newStates
+            output = newStates[-1]
+            newStates = newStates[:-1]
+            updatedStates = newStates[:] # this is hard copy
+
+            for i in range(len(self.notes_distribution_model.layers) - 1):
+                updatedStates[i] = updatedStates[i] + skip_connections[i]
+            print updatedStates
+            debugret = listify(updatedStates) + listify(output) + listify(updatedStates) + listify(output)
+            print debugret
+            #print len(debugret)
+            return debugret
 
         inputWithoutLastTime = self.inputMatrix[0:-1] # because last time will be predicted
         #@@@ inputWithoutLastTime = self.inputMatrix[:,0:-1]
@@ -129,6 +140,10 @@ class Model(object):
 
         # give all layers some initial value from time before the song starts
         outputsInfo = [initialState(layer) for layer in self.notes_distribution_model.layers]
+        print len(outputsInfo)
+        skip_residual_connections_OI = [initialState(layer, taps=[-16], dim=16) for layer in self.notes_distribution_model.layers]
+        print len(skip_residual_connections_OI)
+        outputsInfo = outputsInfo + skip_residual_connections_OI
         #@@@ outputsInfo = [initialState(layer, batchSize) for layer in self.notes_distribution_model.layers]
 
         result, _ = theano.scan(fn=step_note, sequences=inputWithoutLastTime, non_sequences=masks, outputs_info=outputsInfo)
@@ -223,8 +238,8 @@ class Model(object):
 
         # trains nr of notes
         self.trainingFunction_1 = theano.function(
-            inputs=[self.inputMatrix, self.outputMatrix, self.output_nr_notes],
-            outputs=self.cost,
+            inputs=[self.inputMatrix, self.output_nr_notes],
+            outputs=cost_1,
             updates=updates_1,
             allow_input_downcast=True)
 
@@ -261,7 +276,8 @@ class Model(object):
 
             inputData = T.bvector()
             hiddens = states[:len(self.layerSizes)]
-            nr_states = states[len(self.layerSizes):-2]
+            skip_connections = states[len(self.layerSizes):2*len(self.layerSizes)]
+            nr_states = states[2 * len(self.layerSizes):-2]
             inputData = states[-2]
             currTime = states[-1]
 
@@ -285,7 +301,7 @@ class Model(object):
             nr_states = nr_model_output[:-1]
             predicted_nr_of_notes = nr_model_output[-1]
 
-            ensembling_size = 10
+            ensembling_size = 5
             ensemble = []
             for j in range(ensembling_size):
                 finalBig = []
@@ -293,8 +309,8 @@ class Model(object):
 
                     if i % 2 == 0:
                         # !!! guilty code here !!!
-                        magicNumber = 0.9 # that magic number is adjusting probs where < 1 means more errors, less silent moments
-                        finalBig.append(self.rng.uniform() < probs[i] ** magicNumber)
+                        #magicNumber = 0.9 # that magic number is adjusting probs where < 1 means more errors, less silent moments
+                        finalBig.append(self.rng.uniform() < probs[i])
 
                     else:
                         magicNumber = 1.1 
@@ -340,14 +356,19 @@ class Model(object):
 
             final = chosen.reshape((self.outputSize/2, 2))
 
-            debug_return = listify(newStates) + listify(nr_model_output) + [nextInput, currTime+1, final]
+            updatedStates = newStates[:-1]
+            for i in range(len(updatedStates)):
+                updatedStates[i] = newStates[i] + skip_connections[i]
+
+            debug_return = listify(updatedStates) + listify(probs) + listify(updatedStates) + listify(probs) + listify(nr_model_output) + [nextInput, currTime+1, final]
             return debug_return
 
 
 
         nr_notes_outputsInfo = [initialState(layer) for layer in self.nr_notes_to_play_model.layers]
 
-        distribution_outputsInfo = ([initialState(layer) for layer in self.notes_distribution_model.layers] + [initialState(layer) for layer in self.nr_notes_to_play_model.layers] +
+        distribution_outputsInfo = ([initialState(layer) for layer in self.notes_distribution_model.layers] + 
+            [initialState(layer, taps=[-16], dim=16) for layer in self.notes_distribution_model.layers] + [initialState(layer) for layer in self.nr_notes_to_play_model.layers] +
                                     [dict(initial=self.startSeed, taps=[-1]), dict(initial=self.currTime, taps=[-1]), None])
 
 
@@ -369,7 +390,7 @@ def add_note_and_ligature(res_final, note_index, ensemble_ligatures, ensembling_
 	result[note_index * 2] = 1
 	ligature_choice = sum([ensemble[note_index] for ensemble in ensemble_ligatures])
 	print ligature_choice, " ", ensembling_size
-	if ligature_choice > ensembling_size/2:
+	if ligature_choice > 0:
 		print "stalo se, ze ze zahraje ligatura"
 		result[note_index * 2 + 1] = 1 #more than half experiments voted yes
 	return result
@@ -378,36 +399,32 @@ def add_note_and_ligature(res_final, note_index, ensemble_ligatures, ensembling_
 # So a comment is also at self.outputSize in Model class declaration in case of a size change to change it here also
 model_output_size = 156
 def pickBestEnsemble(predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size):
-	print "test1"
-	print ensemble_ligatures
-	res_final_placeholder = [0] * model_output_size
-	print "predicted_nr bylo", predicted_nr_of_notes
-	for i in range(int(round(predicted_nr_of_notes,0))):
-		# tady si davej bacha at proste jedes po maxech, ale potom az se bude i blizit konci tak at to z te jedne hladiny spravedlive random choicem rozdelim
-		max_rank = max(note_rank)
-		max_indices = [k for k, j in enumerate(note_rank) if j == max_rank]
+    print "test1"
+    print ensemble_ligatures
+    res_final_placeholder = [0] * model_output_size
+    print "predicted_nr bylo", predicted_nr_of_notes
+    for i in range(int(round(predicted_nr_of_notes,0))):
+        # tady si davej bacha at proste jedes po maxech, ale potom az se bude i blizit konci tak at to z te jedne hladiny spravedlive random choicem rozdelim
+        max_rank = max(note_rank)
+        max_indices = [k for k, j in enumerate(note_rank) if j == max_rank]
 
-		# there is more equally good candidates than we can possibly choose:
-		if len(max_indices) > predicted_nr_of_notes - i:
-			# choose them randomly
-			final_indices = np.random.permutation(max_indices)[0:int(round(predicted_nr_of_notes,0)) - i]
-			print "tady v picku je ligature choice ", sum([ensemble[final_indices[0]] for ensemble in ensemble_ligatures])
-
-			for i in range(len(final_indices)):
-				res_final_placeholder = add_note_and_ligature(res_final_placeholder, final_indices[i], ensemble_ligatures, ensembling_size)
-			break
-		else:
-			selected_note_index = max_indices[0]
-			print "tady v picku je ligature choice ", sum([ensemble[selected_note_index] for ensemble in ensemble_ligatures])
-			print "test upravy note_ranku"
-			print "tady note_rank pred jeho upravou:", note_rank
-			res_final_placeholder = add_note_and_ligature(res_final_placeholder, selected_note_index, ensemble_ligatures, ensembling_size, note_rank)
-			print "tady note_rank po uprave:", note_rank
-	print "povedlo se"
-	return res_final_placeholder
+        if max_rank <= 0:
+            break
+        # there is more equally good candidates than we can possibly choose:
+        if len(max_indices) > int(round(predicted_nr_of_notes,0)) - i:
+            # choose them randomly
+            final_indices = np.random.permutation(max_indices)[0:int(round(predicted_nr_of_notes,0)) - i]
+            for i in range(len(final_indices)):
+                res_final_placeholder = add_note_and_ligature(res_final_placeholder, final_indices[i], ensemble_ligatures, ensembling_size)
+            break
+        else:
+            selected_note_index = max_indices[0]
+            res_final_placeholder = add_note_and_ligature(res_final_placeholder, selected_note_index, ensemble_ligatures, ensembling_size, note_rank)
+    print "povedlo se"
+    return res_final_placeholder
     
 # if layer needs some data as state from previous recurrent relations, this initializes the starting data
-def initialState(layer, dim=None):
+def initialState(layer, taps=[-1], dim=None):
 
     # else branch is used for batch training if wanted
     if dim is None:
@@ -415,7 +432,7 @@ def initialState(layer, dim=None):
     else:
         state = T.repeat(T.shape_padleft(layer.initial_hidden_state), dim, axis=0) if hasattr(layer, 'initial_hidden_state') else None
     if state is not None:
-        return dict(initial=state, taps=[-1])
+        return dict(initial=state, taps=taps)
     else:
         return None
 
@@ -434,7 +451,7 @@ def listify(result):
     else:
         return [result]
 
-ligature_ensembling_size = 10 #should be same as ensembling size in make_node... after debug, replace argument ensembling size with global variable like this
+ligature_ensembling_size = 5 #should be same as ensembling size in make_node... after debug, replace argument ensembling size with global variable like this
 class PickBestEnsembleOp(theano.Op):
 
     def make_node(self, predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size):
@@ -443,7 +460,6 @@ class PickBestEnsembleOp(theano.Op):
         #ensemble_ligatures = np.array(ensemble_ligatures)
         for i in range(ligature_ensembling_size):
         	ensemble_ligatures[i] = T.as_tensor_variable(ensemble_ligatures[i])
-        print "takhle vypada v make nodu ensemble ligatures: ", ensemble_ligatures
         ensemble_ligatures = T.as_tensor_variable(ensemble_ligatures)
         ensembling_size = T.as_tensor_variable(ensembling_size)
         return theano.Apply(self, [predicted_nr_of_notes, note_rank, ensemble_ligatures, ensembling_size], [T.bvector()])

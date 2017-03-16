@@ -73,19 +73,19 @@ def train(model, music, epochs, start=0):
         #@@@ if batch training is wanted, use this line instead of the following
         #@@@ error = model.trainingFunction(*createBatch(music))
         error_0 = model.trainingFunction_0(numpy.array(inpt), numpy.array(outpt))
-        error_1 = model.trainingFunction_1(numpy.array(inpt), numpy.array(outpt), numpy.array(outpt_nr_notes).reshape((len(outpt_nr_notes),1)))
+        error_1 = model.trainingFunction_1(numpy.array(inpt), numpy.array(outpt_nr_notes).reshape((len(outpt_nr_notes),1)))
 
         print "train probehl v pohode"
         # gen sample
-        if i % 100 == 0 or error_0 < 500:
+        if i % 102 == 0 or error_0 < 500:
             firstIpt, true_first_note, _ = map(numpy.array, getMusicPart(music))
             matrixToMidi(numpy.concatenate((
                 numpy.expand_dims(true_first_note[0], 0),
                 model.genFunction(songLength, 0, firstIpt[0])), axis=0),
-                'output/after{}epochs'.format(i))
+                'output/after{}epochs_skip_connected'.format(i))
 
         # save regulary
-        if i % 1500 == 0:
+        if i % 1502 == 0:
             pickle.dump(model.config_distribution_model, open('params_distribution/params{}'.format(i), 'wb'))
             pickle.dump(model.config_nr_model, open('params_nr/params{}'.format(i), 'wb'))
 
